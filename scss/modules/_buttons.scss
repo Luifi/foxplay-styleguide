@@ -1,0 +1,76 @@
+// ==========================================================================
+// Buttons
+// ==========================================================================
+
+.btn {
+    display: inline-block;
+    margin: 0;
+    padding: rem(12px) rem(20px);
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    white-space: nowrap;
+    font-weight: $font-weight--light;
+    @include transition(.1s all linear);
+    @include radius(100px, transparent);
+
+
+    // Full width
+
+    &--full-width {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+
+    // Border
+
+    &--border-dark {
+        @include radius(100px, $gray-80);
+        color: $gray-80;
+
+        &:hover {
+            @include radius(100px, darken($gray-80, 100%));
+            color: darken($gray-80, 100%);
+        }
+    }
+
+
+    &--border-white {
+        @include radius(100px, white);
+        color: white;
+
+         &:hover {
+            @include radius(100px, darken(white, 10%));
+            color: darken(white, 10%);
+        }
+    }
+
+
+    // Fill
+
+    &--fill-dark {
+        @include radius(100px, transparent);
+        color: white;
+        background: $gray-80;
+
+        &:hover {
+            background: darken($gray-80, 10%);
+        }
+    }
+
+    &--fill-white {
+        @include radius(100px, transparent);
+        color: $gray-71;
+        background: white;
+
+        &:hover {
+            background: darken(white, 10%);
+        }
+    }
+
+}
+
+
+

@@ -1,0 +1,88 @@
+// ==========================================================================
+// Icons
+// ==========================================================================
+
+.icon {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+
+    // Colors
+
+    &--white {
+        fill: white;
+        color: white;
+
+        &:hover:not(.icon--not-hover) {
+            background: white;
+            @include radius(50%, transparent);
+            color: $gray-87;
+        }
+
+
+    }
+
+    &--black {
+        fill: $gray-87;
+        color: $gray-87;
+
+        &:hover:not(.icon--not-hover) {
+            background: $gray-87;
+            @include radius(50%, transparent);
+            color: white;
+        }
+    }
+
+    // Play bg opacity
+
+    @include m(play--opacity) {
+        fill: rgba(0,0,0,.5);
+        color: white;
+
+        &:hover {
+            fill: white;
+        }
+    }
+
+    // Size
+
+    @include m(small) {
+        width: 30px;
+        height: 30px;
+    }
+
+    @include m(extra-small) {
+        width: 10px;
+        height: 10px;
+    }
+
+    // Size avatar
+
+    @include m(avatar) {
+        width: 25px;
+        height: 25px;
+    }
+
+    // Size loupe
+
+    @include m(loupe) {
+        width: 20px;
+        height: 20px;
+    }
+
+    // Rotate
+
+    @include m(rotate-left) {
+        @include transform(rotate(90deg));
+    }
+
+    @include m(rotate-right) {
+        @include transform(rotate(-90deg));
+    }
+
+    @include m(rotate-up) {
+        @include transform(rotate(180deg));
+    }
+
+
+}

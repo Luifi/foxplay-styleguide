@@ -1,0 +1,130 @@
+// ==========================================================================
+// Styleguide
+// ==========================================================================
+
+// Body
+
+#styleguide {
+    background: $gray-7;
+
+    header {
+        background: linear-gradient(45deg, $yellow 10%, $orange 90%);
+        margin-bottom: 40px;
+        text-align: center;
+
+        h1 {
+            color: white;
+        }
+
+        h5 {
+            color: rgba(0,0,0,.4);
+        }
+
+        .navbar {
+            background: rgba(0,0,0,.1);
+            padding: rem(2px) 0;
+
+            .logo--foxplay {
+
+            }
+
+        }
+
+    }
+
+    //sg-block
+    .sg-block {
+        @include radius(4px, transparent);
+        padding: rem(30px);
+        margin-bottom: 40px;
+
+        &--black {
+            background: $gray-87;
+            color: white;
+            margin-top: -40px;
+        }
+
+        &--white {
+            background: white;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 20px 0;
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        h4:first-of-type {
+            margin-top: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .icon {
+            margin-right: 20px;
+        }
+
+
+    }
+
+    // Code
+
+    code {
+        padding: .5em;
+        background: #333;
+        color: white;
+        @include radius(4px, transparent);
+    }
+
+    .code {
+
+        &--orange {
+            background: $orange;
+            display: block;
+            text-align: center;
+        }
+
+        &--purple {
+            background: $purple;
+            display: block;
+            text-align: center;
+        }
+
+        &--light-blue {
+            background: $light-blue;
+            display: block;
+            text-align: center;
+        }
+
+        &--yellow {
+            background: $yellow;
+            display: block;
+            text-align: center;
+        }
+
+        &--green {
+            background: $green;
+            display: block;
+            text-align: center;
+        }
+
+        &--red {
+            background: $red;
+            display: block;
+            text-align: center;
+        }
+
+    }
+
+
+}

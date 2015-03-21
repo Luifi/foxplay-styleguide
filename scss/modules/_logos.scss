@@ -1,0 +1,24 @@
+// ==========================================================================
+// Logos
+// ==========================================================================
+
+.logo {
+    display: block;
+
+    &--white {
+        fill: $white;
+        color: $white;
+    }
+
+    &--black {
+        fill: $gray-87;
+        color: $gray-87;
+    }
+
+    //Foxplay
+
+    @include m(foxplay){
+        width: 110px;
+        height: 26px;
+    }
+}

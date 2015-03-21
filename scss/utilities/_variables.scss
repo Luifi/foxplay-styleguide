@@ -1,0 +1,58 @@
+// ==========================================================================
+// Variables
+// ==========================================================================
+
+
+// Font Stacks
+
+$font-url--google       : 'http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic';
+$font-family--roboto    : 'Roboto', sans-serif;
+
+// Font Weights
+
+$font-weight--thin       : 100;
+$font-weight--light      : 300;
+$font-weight--medium     : 400;
+$font-weight--bold       : 700;
+$font-weight--ultra-bold : 900;
+
+
+// Gray Colors
+
+$white      : #fff;
+$gray-7     : #eee;
+$gray-13    : #ddd;
+$gray-20    : #ccc;
+$gray-27    : #999;
+$gray-53    : #777;
+$gray-64    : #555;
+$gray-71    : #444;
+$gray-80    : #333;
+$gray-87    : #222;
+$gray-95    : #111;
+$black      : #000;
+
+
+// Pilars Colors
+
+$orange     : #f56800;
+$light-blue : #009ee0;
+$purple     : #b60098;
+$yellow     : #fabb00;
+$green      : #3fac00;
+$red        : #e3003e;
+$gold       : #b89f6f;
+
+$color-gradient     : linear-gradient(to right, #ff6c00 0%,#b60098 25%,#009ee0 50%,#a5ba00 75%,#fabb00 100%);
+$color-series       : $orange; // Series
+$color-sports       : $light-blue; // Deportes
+$color-lifestyle    : $purple; // Estilo de vida
+$color-factual      : $yellow; // Documentales
+$color-kids         : $green; // Kids
+$color-movies       : $red; // Movies -- OLD #95a61c
+$color-premium      : $gold; // Fox+ dorado
+$color-mundo-fox    : #e2003b; // Mundo Fox
+
+
+
+

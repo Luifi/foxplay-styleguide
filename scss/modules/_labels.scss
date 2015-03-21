@@ -1,0 +1,81 @@
+// ==========================================================================
+// Labels
+// ==========================================================================
+
+.label {
+    color: white;
+    display: inline-block;
+    padding: .3rem .5rem;
+    font-size: 70%;
+    font-weight: $font-weight--light;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    text-transform: uppercase;
+
+    &-group {
+        margin: 10px 0;
+        position: relative;
+
+        .label--foxmas {
+            position: absolute;
+            top: 1px;
+        }
+
+    }
+
+    @include m(series) {
+       background: $orange;
+    }
+
+    @include m(sports) {
+       background: $light-blue;
+    }
+
+    @include m(lifestyle) {
+       background: $purple;
+    }
+
+    @include m(factual) {
+       background: $yellow;
+    }
+
+    @include m(kids) {
+       background: $green;
+    }
+
+    @include m(movies) {
+       background: $red;
+    }
+
+    @include m(foxmas) {
+        background: white;
+        color: $gray-87;
+        font-weight: $font-weight--ultra-bold;
+        padding: 0;
+        .logo--foxmas {
+            width: 40px;
+            height: 21px;
+        }
+    }
+
+    @include m(exclusive) {
+        background: white;
+        color: $gray-87;
+        font-weight: $font-weight--medium;
+        padding: .3rem 0 .3rem .3rem;
+    }
+
+    @include m(live) {
+        background: $gray-95;
+    }
+
+    @include m(pg) {
+        background: $gray-80;
+        @include radius(4px, transparent);
+    }
+
+
+}
+

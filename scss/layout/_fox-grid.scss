@@ -1,0 +1,132 @@
+/*
+*
+* Base on Olivia row v1.2
+* Copyright 2014, Luis Chiappe
+* http://luifi.github.io/olivia/
+* luischiappe.com.ar
+*
+*/
+
+// ==========================================================================
+// Grid config
+// ==========================================================================
+
+// Width containers and columns
+$full-width     : 100%;
+$min-width      : 980px;
+$fix-width      : 1600px;
+
+// First and last column
+$first          : 1;
+$last           : 12;
+
+
+// Media Queries Breakpoints
+$screen--medium  : 980px;
+$screen--large   : 1366px;
+
+// Size of gutters
+$gutter      : .625rem;
+$gutter--hl  : .3125rem;
+
+// ==========================================================================
+// Grid Containers
+// ==========================================================================
+
+.container {
+    margin: auto;
+    max-width: $fix-width; // Set de max width on _config.scss of your container
+    min-width: $min-width;
+    position: relative;
+    padding: 0 1.250rem;
+}
+
+.container-fluid {
+    width: $full-width;
+}
+
+// ==========================================================================
+// Grid Principal
+// ==========================================================================
+
+.row {
+    margin-left: -$gutter;
+    margin-right: -$gutter;
+
+    // Attribute selector
+    [class*='box'] {
+        float: left;
+        padding: $gutter;
+        width: $full-width; //
+
+        /* Floats last ".box-" to the right */
+        &:last-of-type {
+            float: right;
+        }
+
+        /* Fix gutter for nesting boxes */
+        & .row {
+            margin-bottom: $gutter;
+            margin-top: $gutter;
+        }
+    }
+
+    // Clearfix
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /*---------- REMEMBER: By default all the box has full width ----------- */
+
+    @for $i from $first through $last {
+        .box-#{$i} {
+            width: $full-width / $i;
+        }
+    }
+
+}
+
+// ==========================================================================
+// row Highligh
+// ==========================================================================
+
+.row-hl {
+    margin-left: $gutter--hl;
+    margin-right: $gutter--hl;
+
+    // Attribute selector
+    [class*='box'] {
+        float: left;
+        padding:$gutter--hl;
+        width: $full-width; //
+
+        /* Floats last ".box-" to the right */
+        &:last-of-type {
+            float: right;
+        }
+
+        /* Fi$gutter--highlight for nesting boxes */
+        & .row-hl {
+            margin-bottom: $gutter--hl;
+            margin-top: $gutter--hl;
+        }
+    }
+
+    // Clearfix
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /*---------- REMEMBER: By default all the box has full width ----------- */
+
+    @for $i from $first through $last {
+        .box-#{$i} {
+            width: $full-width / $i;
+        }
+    }
+
+}

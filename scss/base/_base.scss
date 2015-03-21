@@ -1,0 +1,83 @@
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+
+* {
+	@include box-sizing(border-box);
+  outline: 0;
+}
+
+body {
+    font-family: $font-family--roboto;
+    -webkit-font-smoothing: subpixel-antialiased;
+    margin: 0;
+    padding: 0;
+}
+
+// Text
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: $font-weight--light;
+}
+
+h1 {
+    font-size: rem(48px);
+}
+
+h2 {
+    font-size: rem(36px);
+}
+
+h3 {
+  font-size: rem(30px);
+}
+
+h4 {
+
+  font-size: rem(24px);
+}
+
+h5 {
+  font-size: rem(18px);
+}
+
+h6 {
+  font-size: rem(14px);
+}
+
+a {
+    text-decoration: none;
+    color: $gray-87;
+}
+
+p {
+    font-size: rem(14px);
+    font-weight: $font-weight--medium;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    margin-top: 0; //reveer este estilo
+}
+
+
+// Images
+img {
+
+}
+
+
+// Lists
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+
