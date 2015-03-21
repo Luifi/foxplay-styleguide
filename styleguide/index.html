@@ -1,0 +1,538 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Foxplay Styleguide</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body id="styleguide">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <header>
+
+            <div class="navbar container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="box-1">
+                            <svg class="logo logo--foxplay logo--white">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/logos.svg#foxplay"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="text-group">
+                    <h1 class="text-group__title">Styleguide</h1>
+                    <h5 class="text-group__description">Visual resourses for Foxplay Developers & Designers</h5>
+                    <div class="btn-group">
+                        <a href="#" class="btn btn--border-white">Download</a>
+                        <a href="#" class="btn btn--fill-white">View on Github</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- STYLEGUIDE -->
+        <div class="container">
+            <div class="row">
+                <div class="box-1">
+
+                    <!-- Colors -->
+                    <section class="sg-block sg-block--white">
+                        <h2>Colors</h2>
+                        <p>Todos los Colores podran aplicar siempre que se necesite. Encontrá las variables de SASS y el valor Hexadecimal acá. <code>scss/utilities/_variables.scss</code></p>
+                        <div class="line-divider"></div>
+
+                        <h4>Brand:</h4>
+                        <div class="row">
+                            <div class="box-6">
+                                <code class="code--orange">$orange</code>
+                            </div>
+                            <div class="box-6">
+                                <code class="code--light-blue">$light-blue</code>
+                            </div>
+                            <div class="box-6">
+                                <code class="code--purple">$purple</code>
+                            </div>
+                            <div class="box-6">
+                                <code class="code--yellow">$yellow</code>
+                            </div>
+                            <div class="box-6">
+                                <code class="code--green">$green</code>
+                            </div>
+                            <div class="box-6">
+                                <code class="code--red">$red</code>
+                            </div>
+                        </div>
+
+
+                    </section>
+
+                    <!-- Headlines -->
+                    <section class="sg-block sg-block--white">
+                        <h2>Headlines</h2>
+                        <p>Todos los Headlines podran usarse en cualquier lugar sin depender de un contexto. Los estilos los podras encontrar en <code>scss/base/_base.scss</code></p>
+
+
+                        <div class="line-divider"></div>
+
+                        <h1>h1. Headline (48px)</h1>
+                        <h2>h2. Headline (36px)</h2>
+                        <h3>h3. Headline (30px)</h3>
+                        <h4>h4. Headline (24px)</h4>
+                        <h5>h5. Headline (18px)</h5>
+                        <h6>h6. Headline (14px)</h6>
+                    </section>
+
+                    <!-- Buttons -->
+                    <section class="sg-block sg-block--white">
+                        <h2>Buttons</h2>
+                        <p>Todos los botones podran usarse en cualquier lugar sin depender de un contexto. Los estilos los podras encontrar en <code>scss/modules/_buttons.scss</code></p>
+                        <div class="line-divider"></div>
+
+                        <h4>Types:</h4>
+                        <a href="#" class="btn btn--border-dark">Button</a>
+                        <a href="#" class="btn btn--fill-dark">Button</a>
+
+                        <h4>Full width:</h4>
+                        <a href="#" class="btn btn--border-dark btn--full-width">Button</a>
+                        <a href="#" class="btn btn--fill-dark btn--full-width">Button</a>
+
+                        <h4>Group</h4>
+                        <div class="btn-group">
+                            <a href="#" class="btn btn--border-dark">Button group</a>
+                            <a href="#" class="btn btn--fill-dark">Button group</a>
+                        </div>
+
+
+                        <h4>Size:</h4>
+                    </section>
+
+                    <section class="sg-block sg-block--black">
+
+                        <h4>Types:</h4>
+                        <a href="#" class="btn btn--border-white">Button</a>
+                        <a href="#" class="btn btn--fill-white">Button</a>
+
+                        <h4>Full width:</h4>
+                        <a href="#" class="btn btn--border-white btn--full-width">Button</a>
+                        <a href="#" class="btn btn--fill-white btn--full-width">Button</a>
+
+                        <h4>Group</h4>
+                        <div class="btn-group">
+                            <a href="#" class="btn btn--border-white">Button group</a>
+                            <a href="#" class="btn btn--fill-white">Button group</a>
+                        </div>
+
+                        <h4>Size:</h4>
+                    </section>
+
+                    <!-- Labels -->
+                    <section class="sg-block sg-block--white">
+                        <h2>Labels</h2>
+                        <p>Todos los Labels podran usarse en cualquier lugar sin depender de un contexto. Los estilos los podras encontrar en <code>scss/modules/_labels.scss</code></p>
+                        <div class="line-divider"></div>
+
+                        <h4>Types:</h4>
+                        <span class="label label--series">series</span>
+                        <span class="label label--sports">sports</span>
+                        <span class="label label--lifestyle">lifestyle</span>
+                        <span class="label label--factual">factual</span>
+                        <span class="label label--kids">kids</span>
+                        <span class="label label--movies">movies</span>
+                        <span class="label label--live">En vivo</span>
+                        <span class="label label--pg"> Pg-14</span>
+
+                    </section>
+
+                    <section class="sg-block sg-block--black">
+
+                        <h4>Fox+:</h4>
+                        <span class="label label--foxmas">
+                            <svg class="logo logo--foxmas logo--black">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/logos.svg#foxmas"></use>
+                            </svg>
+                        </span>
+
+                        <h4>Group:</h4>
+                        <div class="label-group">
+                            <span class="label label--series">series</span>
+                            <span class="label label--foxmas">
+                                <svg class="logo logo--foxmas logo--black">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/logos.svg#foxmas"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="label-group">
+                            <span class="label label--exclusive">Exclusivo</span>
+                            <span class="label label--foxmas">
+                                <svg class="logo logo--foxmas logo--black">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/logos.svg#foxmas"></use>
+                                </svg>
+                            </span>
+                        </div>
+
+                    </section>
+
+
+                    <!-- Icons black -->
+                    <section class="sg-block sg-block--white">
+                        <h2>Icons</h2>
+                        <p>Todos los iconos podran usarse en cualquier lugar sin depender de un contexto. Los estilos los podras encontrar en <code>scss/modules/_icons.scss</code></p>
+                        <div class="line-divider"></div>
+
+                        <h4>Small</h4>
+
+                        <!-- Icon Avatar -->
+                        <a href="#">
+                            <svg class="icon icon--black icon--avatar icon--not-hover">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#avatar"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Question Small-->
+                        <a href="#">
+                            <svg class="icon icon--black icon--small">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#question-small"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon My List Small-->
+                        <a href="#">
+                            <svg class="icon icon--black icon--small">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#my-list-small"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Alerts Small-->
+                        <a href="#">
+                            <svg class="icon icon--black icon--small">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#alerts-small"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Play Small-->
+                        <a href="#">
+                            <svg class="icon icon--black icon--small">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#play-small"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Circle Arrow Down -->
+                        <a href="#">
+                            <svg class="icon icon--black icon--small">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#circle-arrow"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Circle Arrow Up -->
+                        <a href="#">
+                            <svg class="icon icon--black icon--small icon--rotate-up">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#circle-arrow"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Circle Arrow Left -->
+                        <a href="#">
+                            <svg class="icon icon--black icon--small icon--rotate-left">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#circle-arrow"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Circle Arrow Right -->
+                        <a href="#">
+                            <svg class="icon icon--black icon--small icon--rotate-right">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#circle-arrow"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Arrow Down -->
+                        <a href="#">
+                            <svg class="icon icon--black icon--extra-small icon--not-hover">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#arrow"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Arrow Up -->
+                        <a href="#">
+                            <svg class="icon icon--black icon--extra-small icon--rotate-up icon--not-hover">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#arrow"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Arrow Left -->
+                        <a href="#">
+                            <svg class="icon icon--black icon--extra-small icon--rotate-left icon--not-hover">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#arrow"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Arrow Right -->
+                        <a href="#">
+                            <svg class="icon icon--black icon--extra-small icon--rotate-right icon--not-hover">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#arrow"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Loupe -->
+                        <a href="#">
+                            <svg class="icon icon--black icon--loupe icon--not-hover">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#loupe"></use>
+                            </svg>
+                        </a>
+
+                        <h4>Medium</h4>
+                        <!-- Icon My list -->
+                        <a href="#">
+                            <svg class="icon icon--black">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#my-list"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Alerts -->
+                        <a href="#">
+                            <svg class="icon icon--black">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#alerts"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Share -->
+                        <a href="#">
+                            <svg class="icon icon--black">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#share"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Info -->
+                        <a href="#">
+                            <svg class="icon icon--black">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#info"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Recommendation -->
+                        <a href="#">
+                            <svg class="icon icon--black">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#recommendation"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Parental -->
+                        <a href="#">
+                            <svg class="icon icon--black">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#parental"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Question -->
+                        <a href="#">
+                            <svg class="icon icon--black">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#question"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Print -->
+                        <a href="#">
+                            <svg class="icon icon--black">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#print"></use>
+                            </svg>
+                        </a>
+
+                        <h4>Large</h4>
+
+                    </section>
+
+                    <!-- Icons white -->
+                    <section class="sg-block sg-block--black">
+
+                        <h4>Small</h4>
+
+                        <!-- Icon Avatar -->
+                        <a href="#">
+                            <svg class="icon icon--white icon--avatar icon--not-hover">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#avatar"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Question Small-->
+                        <a href="#">
+                            <svg class="icon icon--white icon--small">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#question-small"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon My List Small-->
+                        <a href="#">
+                            <svg class="icon icon--white icon--small">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#my-list-small"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Alerts Small-->
+                        <a href="#">
+                            <svg class="icon icon--white icon--small">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#alerts-small"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Play Small-->
+                        <a href="#">
+                            <svg class="icon icon--white icon--small">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#play-small"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Play Opacity Small-->
+                        <a href="#">
+                            <svg class="icon icon--white icon--small icon--play--opacity">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#play-small--opacity"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Circle Arrow Down -->
+                        <a href="#">
+                            <svg class="icon icon--white icon--small">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#circle-arrow"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Circle Arrow Up -->
+                        <a href="#">
+                            <svg class="icon icon--white icon--small icon--rotate-up">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#circle-arrow"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Circle Arrow Left -->
+                        <a href="#">
+                            <svg class="icon icon--white icon--small icon--rotate-left">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#circle-arrow"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Circle Arrow Right -->
+                        <a href="#">
+                            <svg class="icon icon--white icon--small icon--rotate-right">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#circle-arrow"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Arrow Down -->
+                        <a href="#">
+                            <svg class="icon icon--white icon--extra-small icon--not-hover">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#arrow"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Arrow Up -->
+                        <a href="#">
+                            <svg class="icon icon--white icon--extra-small icon--rotate-up icon--not-hover">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#arrow"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Arrow Left -->
+                        <a href="#">
+                            <svg class="icon icon--white icon--extra-small icon--rotate-left icon--not-hover">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#arrow"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Arrow Right -->
+                        <a href="#">
+                            <svg class="icon icon--white icon--extra-small icon--rotate-right icon--not-hover">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#arrow"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Loupe -->
+                        <a href="#">
+                            <svg class="icon icon--white icon--loupe icon--not-hover">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#loupe"></use>
+                            </svg>
+                        </a>
+
+                        <h4>Medium</h4>
+                        <!-- Icon My list -->
+                        <a href="#">
+                            <svg class="icon icon--white">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#my-list"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Alerts -->
+                        <a href="#">
+                            <svg class="icon icon--white">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#alerts"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Share -->
+                        <a href="#">
+                            <svg class="icon icon--white">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#share"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Info -->
+                        <a href="#">
+                            <svg class="icon icon--white">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#info"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Recommendation -->
+                        <a href="#">
+                            <svg class="icon icon--white">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#recommendation"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Parental -->
+                        <a href="#">
+                            <svg class="icon icon--white">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#parental"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Question -->
+                        <a href="#">
+                            <svg class="icon icon--white">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#question"></use>
+                            </svg>
+                        </a>
+
+                        <!-- Icon Print -->
+                        <a href="#">
+                            <svg class="icon icon--white">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../img/icons.svg#print"></use>
+                            </svg>
+                        </a>
+
+                        <h4>Large</h4>
+
+
+                    </section>
+
+                </div>
+
+            </div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
