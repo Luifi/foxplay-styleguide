@@ -30,7 +30,7 @@ $gutter--hl  : .3125rem;
 
 .container {
     margin: auto;
-    max-width: $fix-width; // Set de max width on _config.scss of your container
+    max-width: $fix-width;
     min-width: $min-width;
     position: relative;
     padding: 0 1.250rem;
