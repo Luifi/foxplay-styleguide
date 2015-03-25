@@ -56,6 +56,11 @@
         height: 10px;
     }
 
+    @include m(large) {
+        width: 100px;
+        height: 100px;
+    }
+
     // Size avatar
 
     @include m(avatar) {

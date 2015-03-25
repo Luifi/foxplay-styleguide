@@ -547,6 +547,9 @@ li {
   .icon--extra-small {
     width: 10px;
     height: 10px; }
+  .icon--large {
+    width: 100px;
+    height: 100px; }
   .icon--avatar {
     width: 25px;
     height: 25px; }
