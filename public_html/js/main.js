@@ -1,0 +1,1 @@
+$(document).ready(function(){var a=function(a,i){$(i).removeClass("active"),$(a).addClass("active")};$("nav ul li a").click(function(){a(this,"nav ul li a")})});

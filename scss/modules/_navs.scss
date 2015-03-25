@@ -18,6 +18,9 @@
 
 }
 
+
+//Nav vertical
+
 .nav-vertical {
 
     ul {
@@ -25,16 +28,17 @@
         > li {
 
             > a {
-                @include radius(4px, transparent);
                 padding: rem(12px) rem(14px);
                 width: 100%;
                 display: block;
                 border-bottom: 1px solid $gray-20;
+                border-left: 3px solid transparent;
 
 
                 &:hover,
                 &.active {
-                    background: white;
+                    background: rgba(255,255,255,.5);
+                    border-left: 3px solid $orange;
                 }
             }
         }
