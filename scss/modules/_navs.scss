@@ -1,1 +1,43 @@
+// ==========================================================================
+// Navs
+// ==========================================================================
 
+
+.nav {
+
+    ul {
+
+        > li {
+
+            > a {
+                display: inline-block;
+                width: inherit;
+            }
+        }
+    }
+
+}
+
+.nav-vertical {
+
+    ul {
+
+        > li {
+
+            > a {
+                @include radius(4px, transparent);
+                padding: rem(12px) rem(14px);
+                width: 100%;
+                display: block;
+                border-bottom: 1px solid $gray-20;
+
+
+                &:hover,
+                &.active {
+                    background: white;
+                }
+            }
+        }
+    }
+
+}
