@@ -71,11 +71,39 @@
         background: $gray-95;
     }
 
+    // pg label
+
     @include m(pg) {
-        background: $gray-80;
         @include radius(4px, transparent);
     }
 
+    @include m(pg-gray) {
+        background: $gray-80;
+    }
+
+    @include m(pg-green) {
+        background: #0c9447;
+    }
+
+    @include m(pg-blue) {
+        background: #0f7dc2;
+    }
+
+    @include m(pg-yellow) {
+        background: #f8c411;
+    }
+
+    @include m(pg-orange) {
+        background: #e67824;
+    }
+
+    @include m(pg-red) {
+        background: #db2827;
+    }
+
+    @include m(pg-black) {
+        background: #1d1815;
+    }
 
 }
 

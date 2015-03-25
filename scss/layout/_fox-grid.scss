@@ -1,6 +1,6 @@
 /*
 *
-* Base on Olivia row v1.2
+* Base on Olivia Grid v1.2
 * Copyright 2014, Luis Chiappe
 * http://luifi.github.io/olivia/
 * luischiappe.com.ar
@@ -19,11 +19,6 @@ $fix-width      : 1600px;
 // First and last column
 $first          : 1;
 $last           : 12;
-
-
-// Media Queries Breakpoints
-$screen--medium  : 980px;
-$screen--large   : 1366px;
 
 // Size of gutters
 $gutter      : .625rem;
@@ -66,7 +61,7 @@ $gutter--hl  : .3125rem;
 
         /* Fix gutter for nesting boxes */
         & .row {
-            margin-bottom: $gutter;
+            margin-bottom: -$gutter;
             margin-top: $gutter;
         }
     }
@@ -107,9 +102,9 @@ $gutter--hl  : .3125rem;
             float: right;
         }
 
-        /* Fi$gutter--highlight for nesting boxes */
+        /* $gutter--highlight for nesting boxes */
         & .row-hl {
-            margin-bottom: $gutter--hl;
+            margin-bottom: -$gutter--hl;
             margin-top: $gutter--hl;
         }
     }

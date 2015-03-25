@@ -17,16 +17,15 @@
 
     // Full width
 
-    &--full-width {
+    @include m(full-width) {
         width: 100%;
         display: block;
         margin-bottom: 10px;
     }
 
-
     // Border
 
-    &--border-dark {
+    @include m(border-dark) {
         @include radius(100px, $gray-80);
         color: $gray-80;
 
@@ -36,37 +35,25 @@
         }
     }
 
-
-    &--border-white {
+    @include m(border-white) {
         @include radius(100px, white);
         color: white;
 
-         &:hover {
-            @include radius(100px, darken(white, 10%));
-            color: darken(white, 10%);
+        &:hover {
+            @include radius(100px, darken(white, 5%));
+            color: darken(white, 5%);
         }
     }
-
 
     // Fill
 
-    &--fill-dark {
-        @include radius(100px, transparent);
-        color: white;
-        background: $gray-80;
-
-        &:hover {
-            background: darken($gray-80, 10%);
-        }
-    }
-
-    &--fill-white {
+    @include m(fill-white) {
         @include radius(100px, transparent);
         color: $gray-71;
         background: white;
 
         &:hover {
-            background: darken(white, 10%);
+            background: darken(white, 5%);
         }
     }
 

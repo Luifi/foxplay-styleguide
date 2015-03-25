@@ -48,6 +48,7 @@ h5 {
 
 h6 {
   font-size: rem(14px);
+  font-weight: $font-weight--medium;
 }
 
 a {
@@ -66,7 +67,7 @@ p {
 
 // Images
 img {
-
+  border: none !important;
 }
 
 

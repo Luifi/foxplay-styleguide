@@ -1,0 +1,51 @@
+// ==========================================================================
+// Code
+// ==========================================================================
+
+    code {
+        padding: .5em;
+        background: #333;
+        color: white;
+        @include radius(4px, transparent);
+        display: inline-block;
+    }
+
+    .code {
+
+        &--orange {
+            background: $orange;
+            display: block;
+            text-align: center;
+        }
+
+        &--purple {
+            background: $purple;
+            display: block;
+            text-align: center;
+        }
+
+        &--light-blue {
+            background: $light-blue;
+            display: block;
+            text-align: center;
+        }
+
+        &--yellow {
+            background: $yellow;
+            display: block;
+            text-align: center;
+        }
+
+        &--green {
+            background: $green;
+            display: block;
+            text-align: center;
+        }
+
+        &--red {
+            background: $red;
+            display: block;
+            text-align: center;
+        }
+
+    }

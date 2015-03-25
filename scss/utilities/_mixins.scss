@@ -2,13 +2,27 @@
 // Mixins
 // ==========================================================================
 
-// Box sizing
-@mixin box-sizing($value){
-    box-sizing: $value;
-    -webkit-box-sizing: $value;
-    -moz-box-sizing: $value;
-    -ms-box-sizing: $value;
-    -o-box-sizing: $value;
+// Media queries
+
+@mixin mq($break) {
+  @if $break == "small" {
+    @media (min-width: $screen-sm) and (max-width: $screen-md) {
+      @content;
+    }
+  }
+  @else if $break == "medium" {
+    @media (min-width: $screen-md + 1) {
+      @content;
+    }
+  }
+  @else if $break == "large" {
+    @media (min-width: $screen-lg) {
+      @content;
+    }
+  }
+   @else {
+    @error "Whoops! No value could be retrieved for `#{$break}`. "
+  }
 }
 
 // BEM selectors
@@ -23,6 +37,15 @@
   &--#{$modifier} {
     @content;
   }
+}
+
+// Box sizing
+@mixin box-sizing($value){
+    box-sizing: $value;
+    -webkit-box-sizing: $value;
+    -moz-box-sizing: $value;
+    -ms-box-sizing: $value;
+    -o-box-sizing: $value;
 }
 
 // Border Radius

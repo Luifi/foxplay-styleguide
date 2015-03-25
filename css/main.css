@@ -222,7 +222,8 @@ h5 {
   font-size: 1.125rem; }
 
 h6 {
-  font-size: 0.875rem; }
+  font-size: 0.875rem;
+  font-weight: 400; }
 
 a {
   text-decoration: none;
@@ -235,6 +236,9 @@ p {
   -webkit-font-smoothing: antialiased;
   margin-top: 0; }
 
+img {
+  border: none !important; }
+
 ul,
 li {
   margin: 0;
@@ -243,7 +247,7 @@ li {
 
 /*
 *
-* Base on Olivia row v1.2
+* Base on Olivia Grid v1.2
 * Copyright 2014, Luis Chiappe
 * http://luifi.github.io/olivia/
 * luischiappe.com.ar
@@ -272,7 +276,7 @@ li {
     .row [class*='box']:last-of-type {
       float: right; }
     .row [class*='box'] .row {
-      margin-bottom: 0.625rem;
+      margin-bottom: -0.625rem;
       margin-top: 0.625rem; }
   .row:after {
     content: "";
@@ -312,11 +316,11 @@ li {
     padding: 0.3125rem;
     width: 100%;
     /* Floats last ".box-" to the right */
-    /* Fi$gutter--highlight for nesting boxes */ }
+    /* $gutter--highlight for nesting boxes */ }
     .row-hl [class*='box']:last-of-type {
       float: right; }
     .row-hl [class*='box'] .row-hl {
-      margin-bottom: 0.3125rem;
+      margin-bottom: -0.3125rem;
       margin-top: 0.3125rem; }
   .row-hl:after {
     content: "";
@@ -413,19 +417,8 @@ li {
       -moz-border-radius: 100px;
       -ms-border-radius: 100px;
       -o-border-radius: 100px;
-      border: 1px solid #e6e6e6;
-      color: #e6e6e6; }
-  .btn--fill-dark {
-    border-radius: 100px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    -ms-border-radius: 100px;
-    -o-border-radius: 100px;
-    border: 1px solid transparent;
-    color: white;
-    background: #333; }
-    .btn--fill-dark:hover {
-      background: #1a1a1a; }
+      border: 1px solid #f2f2f2;
+      color: #f2f2f2; }
   .btn--fill-white {
     border-radius: 100px;
     -webkit-border-radius: 100px;
@@ -436,7 +429,7 @@ li {
     color: #444;
     background: white; }
     .btn--fill-white:hover {
-      background: #e6e6e6; }
+      background: #f2f2f2; }
 
 .label {
   color: white;
@@ -483,13 +476,26 @@ li {
   .label--live {
     background: #111; }
   .label--pg {
-    background: #333;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
     border: 1px solid transparent; }
+  .label--pg-gray {
+    background: #333; }
+  .label--pg-green {
+    background: #0c9447; }
+  .label--pg-blue {
+    background: #0f7dc2; }
+  .label--pg-yellow {
+    background: #f8c411; }
+  .label--pg-orange {
+    background: #e67824; }
+  .label--pg-red {
+    background: #db2827; }
+  .label--pg-black {
+    background: #1d1815; }
 
 .icon {
   width: 50px;
@@ -564,6 +570,43 @@ li {
     margin-bottom: 20px;
     margin-top: 0; }
 
+code {
+  padding: .5em;
+  background: #333;
+  color: white;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border: 1px solid transparent;
+  display: inline-block; }
+
+.code--orange {
+  background: #f56800;
+  display: block;
+  text-align: center; }
+.code--purple {
+  background: #b60098;
+  display: block;
+  text-align: center; }
+.code--light-blue {
+  background: #009ee0;
+  display: block;
+  text-align: center; }
+.code--yellow {
+  background: #fabb00;
+  display: block;
+  text-align: center; }
+.code--green {
+  background: #3fac00;
+  display: block;
+  text-align: center; }
+.code--red {
+  background: #e3003e;
+  display: block;
+  text-align: center; }
+
 #styleguide {
   background: #eee; }
   #styleguide header {
@@ -608,39 +651,5 @@ li {
       margin: 0; }
     #styleguide .sg-block .icon {
       margin-right: 20px; }
-  #styleguide code {
-    padding: .5em;
-    background: #333;
-    color: white;
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    border: 1px solid transparent; }
-  #styleguide .code--orange {
-    background: #f56800;
-    display: block;
-    text-align: center; }
-  #styleguide .code--purple {
-    background: #b60098;
-    display: block;
-    text-align: center; }
-  #styleguide .code--light-blue {
-    background: #009ee0;
-    display: block;
-    text-align: center; }
-  #styleguide .code--yellow {
-    background: #fabb00;
-    display: block;
-    text-align: center; }
-  #styleguide .code--green {
-    background: #3fac00;
-    display: block;
-    text-align: center; }
-  #styleguide .code--red {
-    background: #e3003e;
-    display: block;
-    text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
