@@ -23,13 +23,12 @@ $(document).ready(function(){
     $(document).on("scroll", function() {
 
         if($(this).scrollTop() >= heightH) {
-            $nav.css({
-                "position"  : 'fixed',
-                "margin-top": -310,
-            });
+            $nav.addClass('is-fixed');
+            $nav.css('margin-top', '-310px');
 
         } else {
-            $nav.removeAttr("style");
+            $nav.removeClass('is-fixed');
+            $nav.css('margin-top', '0');
         }
     });
 
