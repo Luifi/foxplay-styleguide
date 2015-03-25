@@ -46,14 +46,14 @@
 
     // Size
 
-    @include m(small) {
-        width: 30px;
-        height: 30px;
-    }
-
     @include m(extra-small) {
         width: 10px;
         height: 10px;
+    }
+
+    @include m(small) {
+        width: 30px;
+        height: 30px;
     }
 
     @include m(large) {

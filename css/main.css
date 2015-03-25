@@ -448,6 +448,9 @@ li {
     .btn--fill-white:hover {
       background: #f2f2f2; }
 
+.btn-group .btn {
+  margin-right: 10px; }
+
 .label {
   color: white;
   display: inline-block;
@@ -547,12 +550,12 @@ li {
     color: white; }
     .icon--play--opacity:hover {
       fill: white; }
-  .icon--small {
-    width: 30px;
-    height: 30px; }
   .icon--extra-small {
     width: 10px;
     height: 10px; }
+  .icon--small {
+    width: 30px;
+    height: 30px; }
   .icon--large {
     width: 100px;
     height: 100px; }
