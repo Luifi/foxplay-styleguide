@@ -47,6 +47,16 @@
 
     // Fill
 
+    @include m(fill-dark) {
+        @include radius(100px, transparent);
+        color: white;
+       background: $gray-80;
+
+        &:hover {
+            background: darken($gray-80, 5%);
+        }
+    }
+
     @include m(fill-white) {
         @include radius(100px, transparent);
         color: $gray-71;
@@ -56,6 +66,8 @@
             background: darken(white, 5%);
         }
     }
+
+
 
 }
 

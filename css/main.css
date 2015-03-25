@@ -419,6 +419,17 @@ li {
       -o-border-radius: 100px;
       border: 1px solid #f2f2f2;
       color: #f2f2f2; }
+  .btn--fill-dark {
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    border: 1px solid transparent;
+    color: white;
+    background: #333; }
+    .btn--fill-dark:hover {
+      background: #262626; }
   .btn--fill-white {
     border-radius: 100px;
     -webkit-border-radius: 100px;
