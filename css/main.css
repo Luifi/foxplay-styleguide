@@ -652,12 +652,13 @@ code {
     border: 1px solid transparent;
     padding: 1.875rem;
     margin-bottom: 40px; }
+    #styleguide .sg-block--white {
+      background: white; }
     #styleguide .sg-block--black {
       background: #222;
       color: white;
-      margin-top: -40px; }
-    #styleguide .sg-block--white {
-      background: white; }
+      margin: 40px -20px -20px -20px;
+      padding: 1.25rem; }
     #styleguide .sg-block h1,
     #styleguide .sg-block h2,
     #styleguide .sg-block h3,
