@@ -646,7 +646,7 @@ code {
   border-bottom: 1px solid #ccc;
   border-left: 3px solid transparent; }
   .nav-vertical ul > li > a:hover, .nav-vertical ul > li > a.active {
-    background: rgba(255, 255, 255, 0.5);
+    background: white;
     border-left: 3px solid #f56800; }
 
 #styleguide {
