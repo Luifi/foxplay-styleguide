@@ -26,7 +26,6 @@ $(document).ready(function(){
             $nav.css({
                 "position"  : 'fixed',
                 "margin-top": -310,
-                "width"     : 296+"px"
             });
 
         } else {
