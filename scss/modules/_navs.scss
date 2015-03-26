@@ -2,7 +2,6 @@
 // Navs
 // ==========================================================================
 
-
 .nav {
 
     ul {
@@ -18,7 +17,6 @@
 
 }
 
-
 //Nav vertical
 
 .nav-vertical {
@@ -28,17 +26,18 @@
         > li {
 
             > a {
-                padding: rem(12px) rem(14px);
+                padding: rem(8px) rem(14px);
                 width: 100%;
                 display: block;
-                border-bottom: 1px solid $gray-20;
-                border-left: 3px solid transparent;
+                border-left: 2px solid transparent;
 
 
-                &:hover,
+                &:hover {
+                    border-left: 2px solid $gray-20;
+                }
+
                 &.active {
-                    background: white;
-                    border-left: 3px solid $orange;
+                    border-left: 2px solid $orange;
                 }
 
             }

@@ -11,41 +11,31 @@
     }
 
     .code {
+        display: block;
+        text-align: center;
 
-        &--orange {
+        @include m(orange) {
             background: $orange;
-            display: block;
-            text-align: center;
         }
 
-        &--purple {
+        @include m(purple) {
             background: $purple;
-            display: block;
-            text-align: center;
         }
 
-        &--light-blue {
+        @include m(light-blue) {
             background: $light-blue;
-            display: block;
-            text-align: center;
         }
 
-        &--yellow {
+        @include m(yellow) {
             background: $yellow;
-            display: block;
-            text-align: center;
         }
 
-        &--green {
+        @include m(green) {
             background: $green;
-            display: block;
-            text-align: center;
         }
 
-        &--red {
+        @include m(red) {
             background: $red;
-            display: block;
-            text-align: center;
         }
 
     }

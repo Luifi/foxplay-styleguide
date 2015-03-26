@@ -62,7 +62,7 @@
     @include m(fill-dark) {
         @include radius(100px, transparent);
         color: white;
-       background: $gray-80;
+        background: $gray-80;
 
         &:hover {
             background: darken($gray-80, 5%);

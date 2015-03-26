@@ -4,7 +4,7 @@
 
 $(document).ready(function(){
 
-    // Activa Navs
+    // Active Navs
 
     var activeNav = function(active, list) {
         $(list).removeClass('active');
@@ -20,11 +20,13 @@ $(document).ready(function(){
     var $nav = $('.nav-vertical');
     var heightH = $('header').height();
 
+    console.log(heightH);
+
     $(document).on("scroll", function() {
 
         if($(this).scrollTop() >= heightH) {
             $nav.addClass('is-fixed');
-            $nav.css('margin-top', '-310px');
+            $nav.css('margin-top', -(heightH + 30));
 
         } else {
             $nav.removeClass('is-fixed');

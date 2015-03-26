@@ -613,44 +613,35 @@ code {
   border: 1px solid transparent;
   display: inline-block; }
 
-.code--orange {
-  background: #f56800;
+.code {
   display: block;
   text-align: center; }
-.code--purple {
-  background: #b60098;
-  display: block;
-  text-align: center; }
-.code--light-blue {
-  background: #009ee0;
-  display: block;
-  text-align: center; }
-.code--yellow {
-  background: #fabb00;
-  display: block;
-  text-align: center; }
-.code--green {
-  background: #3fac00;
-  display: block;
-  text-align: center; }
-.code--red {
-  background: #e3003e;
-  display: block;
-  text-align: center; }
+  .code--orange {
+    background: #f56800; }
+  .code--purple {
+    background: #b60098; }
+  .code--light-blue {
+    background: #009ee0; }
+  .code--yellow {
+    background: #fabb00; }
+  .code--green {
+    background: #3fac00; }
+  .code--red {
+    background: #e3003e; }
 
 .nav ul > li > a {
   display: inline-block;
   width: inherit; }
 
 .nav-vertical ul > li > a {
-  padding: 0.75rem 0.875rem;
+  padding: 0.5rem 0.875rem;
   width: 100%;
   display: block;
-  border-bottom: 1px solid #ccc;
-  border-left: 3px solid transparent; }
-  .nav-vertical ul > li > a:hover, .nav-vertical ul > li > a.active {
-    background: white;
-    border-left: 3px solid #f56800; }
+  border-left: 2px solid transparent; }
+  .nav-vertical ul > li > a:hover {
+    border-left: 2px solid #ccc; }
+  .nav-vertical ul > li > a.active {
+    border-left: 2px solid #f56800; }
 
 #styleguide {
   background: #eee; }
