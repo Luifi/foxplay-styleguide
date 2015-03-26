@@ -6,13 +6,14 @@ $(document).ready(function(){
 
     // Active Navs
 
-    var activeNav = function(active, list) {
-        $(list).removeClass('active');
+    var activeNav = function(active, item) {
+        $(item).parent().siblings().children().removeClass('active');
         $(active).addClass('active');
     }
 
-    $('nav ul li a').click(function(){
-        activeNav(this, 'nav ul li a');
+    $('.nav a').click(function(e){
+        e.preventDefault();
+        activeNav(this, this);
     });
 
     // Fix Nav Styleguide
