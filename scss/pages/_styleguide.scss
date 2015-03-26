@@ -37,7 +37,7 @@
         @include radius(4px, transparent);
         padding: rem(30px);
         margin-bottom: 40px;
-        @include transition(all .3s linear);
+        overflow: hidden;
 
         &--white {
             background: white;

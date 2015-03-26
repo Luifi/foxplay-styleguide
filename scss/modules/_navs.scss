@@ -7,10 +7,13 @@
     ul {
 
         > li {
+            position: relative;
+            display: inline-block;
 
             > a {
                 display: inline-block;
                 width: inherit;
+                padding: rem(10px) rem(15px);
             }
         }
     }
@@ -19,18 +22,18 @@
 
 //Nav vertical
 
-.nav-vertical {
+.nav--vertical {
 
     ul {
 
         > li {
+            display: block;
 
             > a {
                 padding: rem(8px) rem(14px);
                 width: 100%;
                 display: block;
                 border-left: 2px solid transparent;
-
 
                 &:hover {
                     border-left: 2px solid $gray-20;
@@ -46,3 +49,118 @@
 
 }
 
+
+//Nav Tabs
+
+.nav--tabs {
+
+    ul {
+
+        > li {
+            float: left;
+            border-left: none;
+
+            > a {
+                text-align: center;
+                padding: rem(8px) rem(22px);
+
+                &.active {
+
+                    &::before,
+                    &::after {
+                       content: '';
+                       left: 50%;
+                    }
+
+                    &::before {
+                        bottom: -8px;
+                        margin-left: -7px;
+                    }
+
+                    &::after {
+                        top: 35px;
+                        margin-left: -8px;
+                    }
+                }
+            }
+        }
+    }
+
+    &--gray {
+
+        ul {
+
+            > li {
+                border: 1px solid $gray-20;
+                border-left: none;
+
+                &:first-child {
+                    @include radius(5px 0 0 5px, $gray-20);
+                }
+
+                &:last-child {
+                    @include radius(0 5px 5px 0, $gray-20);
+                    border-left: none;
+                }
+
+                > a {
+
+                    &:hover {
+                        background: $gray-7;
+                    }
+
+                    &.active {
+                        background: $gray-13;
+
+
+                        &::before {
+                            @extend %stroke-arrow-bottom-gray;
+                        }
+
+                        &::after {
+                            @extend %arrow-bottom-gray;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &--white {
+
+        ul {
+
+            > li {
+                border: 1px solid $gray-20;
+
+                &:first-child {
+                    @include radius(5px 0 0 5px, $gray-20);
+                }
+
+                &:last-child {
+                    @include radius(0 5px 5px 0, $gray-20);
+                }
+
+                > a {
+
+                    &:hover {
+                        background: $gray-7;
+                    }
+
+                    &.active {
+                        background: $gray-13;
+
+
+                        &::before {
+
+                        }
+
+                        &::after {
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

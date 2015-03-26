@@ -17,7 +17,7 @@ $(document).ready(function(){
 
     // Fix Nav Styleguide
 
-    var $nav = $('.nav-vertical');
+    var $nav = $('.nav--vertical');
     var heightH = $('header').height();
 
     console.log(heightH);

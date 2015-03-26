@@ -1,3 +1,13 @@
 // ==========================================================================
 // Extends
 // ==========================================================================
+
+// Arrow Gray #ddd
+
+%arrow-bottom-gray {
+    @include arrow(bottom, $gray-13, 8px);
+}
+
+%stroke-arrow-bottom-gray {
+    @include arrow(bottom, $gray-53, 7px);
+}

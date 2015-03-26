@@ -7,6 +7,29 @@
 .is-fixed {
   position: fixed; }
 
+.is-hidden {
+  display: none; }
+
+.nav--tabs--gray ul > li > a.active::after {
+  display: block;
+  height: 0;
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  border-top: 8px solid #ddd;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent; }
+
+.nav--tabs--gray ul > li > a.active::before {
+  display: block;
+  height: 0;
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  border-top: 7px solid #777;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent; }
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -616,32 +639,96 @@ code {
 .code {
   display: block;
   text-align: center; }
-  .code--orange {
+  .code--#f56800 {
     background: #f56800; }
-  .code--purple {
+  .code--#b60098 {
     background: #b60098; }
-  .code--light-blue {
+  .code--#009ee0 {
     background: #009ee0; }
-  .code--yellow {
+  .code--#fabb00 {
     background: #fabb00; }
-  .code--green {
+  .code--#3fac00 {
     background: #3fac00; }
-  .code--red {
+  .code--#e3003e {
     background: #e3003e; }
 
-.nav ul > li > a {
-  display: inline-block;
-  width: inherit; }
+.nav ul > li {
+  position: relative;
+  display: inline-block; }
+  .nav ul > li > a {
+    display: inline-block;
+    width: inherit;
+    padding: 0.625rem 0.9375rem; }
 
-.nav-vertical ul > li > a {
-  padding: 0.5rem 0.875rem;
-  width: 100%;
-  display: block;
-  border-left: 2px solid transparent; }
-  .nav-vertical ul > li > a:hover {
-    border-left: 2px solid #ccc; }
-  .nav-vertical ul > li > a.active {
-    border-left: 2px solid #f56800; }
+.nav--vertical ul > li {
+  display: block; }
+  .nav--vertical ul > li > a {
+    padding: 0.5rem 0.875rem;
+    width: 100%;
+    display: block;
+    border-left: 2px solid transparent; }
+    .nav--vertical ul > li > a:hover {
+      border-left: 2px solid #ccc; }
+    .nav--vertical ul > li > a.active {
+      border-left: 2px solid #f56800; }
+
+.nav--tabs ul > li {
+  float: left;
+  border-left: none; }
+  .nav--tabs ul > li > a {
+    text-align: center;
+    padding: 0.5rem 1.375rem; }
+    .nav--tabs ul > li > a.active::before, .nav--tabs ul > li > a.active::after {
+      content: '';
+      left: 50%; }
+    .nav--tabs ul > li > a.active::before {
+      bottom: -8px;
+      margin-left: -7px; }
+    .nav--tabs ul > li > a.active::after {
+      top: 35px;
+      margin-left: -8px; }
+.nav--tabs--gray ul > li {
+  border: 1px solid #ccc;
+  border-left: none; }
+  .nav--tabs--gray ul > li:first-child {
+    border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    -ms-border-radius: 5px 0 0 5px;
+    -o-border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc; }
+  .nav--tabs--gray ul > li:last-child {
+    border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    -ms-border-radius: 0 5px 5px 0;
+    -o-border-radius: 0 5px 5px 0;
+    border: 1px solid #ccc;
+    border-left: none; }
+  .nav--tabs--gray ul > li > a:hover {
+    background: #eee; }
+  .nav--tabs--gray ul > li > a.active {
+    background: #ddd; }
+.nav--tabs--white ul > li {
+  border: 1px solid #ccc; }
+  .nav--tabs--white ul > li:first-child {
+    border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    -ms-border-radius: 5px 0 0 5px;
+    -o-border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc; }
+  .nav--tabs--white ul > li:last-child {
+    border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    -ms-border-radius: 0 5px 5px 0;
+    -o-border-radius: 0 5px 5px 0;
+    border: 1px solid #ccc; }
+  .nav--tabs--white ul > li > a:hover {
+    background: #eee; }
+  .nav--tabs--white ul > li > a.active {
+    background: #ddd; }
 
 #styleguide {
   background: #eee; }
@@ -665,11 +752,7 @@ code {
     border: 1px solid transparent;
     padding: 1.875rem;
     margin-bottom: 40px;
-    transition: all 0.3s linear;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
-    -ms-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear; }
+    overflow: hidden; }
     #styleguide .sg-block--white {
       background: white; }
     #styleguide .sg-block--black {
