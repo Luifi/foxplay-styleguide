@@ -14,27 +14,27 @@
         display: block;
         text-align: center;
 
-        @include m($orange) {
+        @include m(orange) {
             background: $orange;
         }
 
-        @include m($purple) {
+        @include m(purple) {
             background: $purple;
         }
 
-        @include m($light-blue) {
+        @include m(light-blue) {
             background: $light-blue;
         }
 
-        @include m($yellow) {
+        @include m(yellow) {
             background: $yellow;
         }
 
-        @include m($green) {
+        @include m(green) {
             background: $green;
         }
 
-        @include m($red) {
+        @include m(red) {
             background: $red;
         }
 

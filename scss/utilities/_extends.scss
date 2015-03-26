@@ -2,12 +2,32 @@
 // Extends
 // ==========================================================================
 
+// Clearfix
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
 // Arrow Gray #ddd
 
 %arrow-bottom-gray {
-    @include arrow(bottom, $gray-13, 8px);
+    @include arrow(bottom, $gray-20, 8px);
 }
 
 %stroke-arrow-bottom-gray {
     @include arrow(bottom, $gray-53, 7px);
+}
+
+// Arrow dark #ddd
+
+%arrow-bottom-dark {
+    @include arrow(bottom, $gray-64, 8px);
+}
+
+%stroke-arrow-bottom-dark {
+    @include arrow(bottom, $gray-7, 7px);
 }

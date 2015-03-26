@@ -3,6 +3,7 @@
 // ==========================================================================
 
 .nav {
+    @extend %clearfix;
 
     ul {
 
@@ -86,6 +87,9 @@
         }
     }
 
+
+    // Gray
+
     &--gray {
 
         ul {
@@ -106,11 +110,11 @@
                 > a {
 
                     &:hover {
-                        background: $gray-7;
+                        background: $gray-13;
                     }
 
                     &.active {
-                        background: $gray-13;
+                        background: $gray-20;
 
 
                         &::before {
@@ -126,36 +130,41 @@
         }
     }
 
-    &--white {
+    // White
+
+    &--dark {
 
         ul {
 
             > li {
-                border: 1px solid $gray-20;
+                border: 1px solid $gray-64;
+                border-left: none;
 
                 &:first-child {
-                    @include radius(5px 0 0 5px, $gray-20);
+                    @include radius(5px 0 0 5px, $gray-64);
                 }
 
                 &:last-child {
-                    @include radius(0 5px 5px 0, $gray-20);
+                    @include radius(0 5px 5px 0, $gray-64);
+                    border-left: none;
                 }
 
                 > a {
+                    color: white;
 
                     &:hover {
-                        background: $gray-7;
+                        background: $gray-71;
                     }
 
                     &.active {
-                        background: $gray-13;
-
+                        background: $gray-64;
 
                         &::before {
-
+                            @extend %stroke-arrow-bottom-dark;
                         }
 
                         &::after {
+                            @extend %arrow-bottom-dark;
                         }
                     }
                 }
