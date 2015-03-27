@@ -64,15 +64,18 @@
             }
 
             &.active {
-                @extend %nav-tab-item-active;
-                background: $gray-20;
 
-                &::before {
-                    @extend %stroke-arrow-bottom-gray;
-                }
+                a {
+                    @extend %nav-tab-item-active;
+                    background: $gray-20;
 
-                &::after {
-                    @extend %arrow-bottom-gray;
+                    &::before {
+                        @extend %stroke-arrow-bottom-gray;
+                    }
+
+                    &::after {
+                        @extend %arrow-bottom-gray;
+                    }
                 }
             }
         }
@@ -106,15 +109,18 @@
             }
 
             &.active {
-                @extend %nav-tab-item-active;
-                background: $gray-64;
 
-                &::before {
-                    @extend %stroke-arrow-bottom-dark;
-                }
+                a {
+                    @extend %nav-tab-item-active;
+                    background: $gray-64;
 
-                &::after {
-                    @extend %arrow-bottom-dark;
+                    &::before {
+                        @extend %stroke-arrow-bottom-dark;
+                    }
+
+                    &::after {
+                        @extend %arrow-bottom-dark;
+                    }
                 }
             }
         }

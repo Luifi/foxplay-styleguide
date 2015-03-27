@@ -6,20 +6,22 @@
 
     @include e(item) {
         display: block;
-        border-left: 2px solid transparent;
 
         a {
             padding: rem(8px) rem(14px);
             width: 100%;
             display: block;
-        }
+            border-left: 2px solid transparent;
 
-        &:hover {
+            &:hover {
                 border-left: 2px solid $gray-20;
             }
+        }
 
         &.active {
-            border-left: 2px solid $orange;
+            a {
+                border-left: 2px solid $orange;
+            }
         }
     }
 
