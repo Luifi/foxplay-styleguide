@@ -5,7 +5,7 @@
     code {
         padding: .25em .5em;
         background: #333;
-        color: white;
+        color: $white;
         @include radius(4px, transparent);
         display: inline-block;
     }

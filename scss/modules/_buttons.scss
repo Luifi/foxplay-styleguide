@@ -48,12 +48,12 @@
     }
 
     @include m(border-white) {
-        @include radius(100px, white);
-        color: white;
+        @include radius(100px, $white);
+        color: $white;
 
         &:hover {
-            @include radius(100px, darken(white, 5%));
-            color: darken(white, 5%);
+            @include radius(100px, darken($white, 5%));
+            color: darken($white, 5%);
         }
     }
 
@@ -61,7 +61,7 @@
 
     @include m(fill-dark) {
         @include radius(100px, transparent);
-        color: white;
+        color: $white;
         background: $gray-80;
 
         &:hover {
@@ -72,10 +72,10 @@
     @include m(fill-white) {
         @include radius(100px, transparent);
         color: $gray-71;
-        background: white;
+        background: $white;
 
         &:hover {
-            background: darken(white, 5%);
+            background: darken($white, 5%);
         }
     }
 

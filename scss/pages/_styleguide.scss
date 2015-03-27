@@ -13,7 +13,7 @@
         text-align: center;
 
         .headline-1 {
-            color: white;
+            color: $white;
         }
 
         .headline-5 {
@@ -40,12 +40,12 @@
 
 
         &--white {
-            background: white;
+            background: $white;
         }
 
         &--black {
             background: $gray-87;
-            color: white;
+            color: $white;
             margin: 30px -20px -20px -20px;
             padding: rem(20px);
         }

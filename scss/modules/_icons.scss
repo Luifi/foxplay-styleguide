@@ -10,11 +10,11 @@
     // Colors
 
     &--white {
-        fill: white;
-        color: white;
+        fill: $white;
+        color: $white;
 
         &:hover:not(.icon--not-hover) {
-            background: white;
+            background: $white;
             @include radius(50%, transparent);
             color: $gray-87;
         }
@@ -29,7 +29,7 @@
         &:hover:not(.icon--not-hover) {
             background: $gray-87;
             @include radius(50%, transparent);
-            color: white;
+            color: $white;
         }
     }
 
@@ -37,10 +37,10 @@
 
     @include m(play--opacity) {
         fill: rgba(0,0,0,.5);
-        color: white;
+        color: $white;
 
         &:hover {
-            fill: white;
+            fill: $white;
         }
     }
 
