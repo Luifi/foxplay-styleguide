@@ -2,28 +2,24 @@
 // Nav Vertical
 // ==========================================================================
 
-.nav--vertical {
+.nav-vertical {
 
-    ul {
+    @include e(item) {
+        display: block;
+        border-left: 2px solid transparent;
 
-        > li {
+        a {
+            padding: rem(8px) rem(14px);
+            width: 100%;
             display: block;
+        }
 
-            > a {
-                padding: rem(8px) rem(14px);
-                width: 100%;
-                display: block;
-                border-left: 2px solid transparent;
-
-                &:hover {
-                    border-left: 2px solid $gray-20;
-                }
-
-                &.active {
-                    border-left: 2px solid $orange;
-                }
-
+        &:hover {
+                border-left: 2px solid $gray-20;
             }
+
+        &.active {
+            border-left: 2px solid $orange;
         }
     }
 

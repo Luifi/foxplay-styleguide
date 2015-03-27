@@ -7,11 +7,15 @@
 %nav-tab-item {
     float: left;
     border-left: none;
+    position: relative;
+    display: inline-block;
 }
 
 %nav-tab-item-a {
     text-align: center;
     padding: rem(8px) rem(22px);
+    display: inline-block;
+    width: inherit;
 }
 
 %nav-tab-item-active {
@@ -27,7 +31,7 @@
     }
 
     &::after {
-        top: 38px;
+        top: 34px;
         margin-left: -8px;
     }
 }
@@ -59,7 +63,7 @@
                 }
             }
 
-            @include m(active) {
+            &.active {
                 @extend %nav-tab-item-active;
                 background: $gray-20;
 
@@ -101,7 +105,7 @@
                 }
             }
 
-            @include m(active) {
+            &.active {
                 @extend %nav-tab-item-active;
                 background: $gray-64;
 

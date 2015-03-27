@@ -6,19 +6,18 @@ $(document).ready(function(){
 
     // Active Navs
 
-    var activeNav = function(active, item) {
-        $(item).parent().siblings().children().removeClass('active');
-        $(active).addClass('active');
+    var activeNav = function(item, items) {
+        $(items).parent().siblings().removeClass('active');
+        $(item).parent().addClass('active');
     }
 
-    $('.nav a').click(function(e){
-        e.preventDefault();
+    $('.nav a').click(function(){
         activeNav(this, this);
     });
 
     // Fix Nav Styleguide
 
-    var $nav = $('.nav--vertical');
+    var $nav = $('.nav-vertical');
     var heightH = $('header').height();
 
     console.log(heightH);
