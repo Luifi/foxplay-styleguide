@@ -4,19 +4,19 @@
 
 // Body
 
-#styleguide {
+.styleguide {
     background: $gray-7;
 
-    header {
+    .sg-header {
         background: linear-gradient(45deg, $yellow 10%, $orange 90%);
         margin-bottom: 40px;
         text-align: center;
 
-        h1 {
+        .headline-1 {
             color: white;
         }
 
-        h5 {
+        .headline-5 {
             color: rgba(0,0,0,.4);
         }
 
@@ -27,12 +27,11 @@
             .logo--foxplay {
 
             }
-
         }
-
     }
 
-    //sg-block
+    // Sg-block
+
     .sg-block {
         @include radius(4px, transparent);
         padding: rem(30px);
@@ -51,22 +50,21 @@
             padding: rem(20px);
         }
 
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            margin: 20px 0;
-        }
+        .headline {
 
-        h2 {
-            margin-top: 0;
-            margin-bottom: 10px;
-        }
+            &-1, &-2, &-3, &-4, &-5 {
+                margin: 20px 0;
+            }
 
-        h4:first-of-type {
-            margin-top: 0;
+            &-2 {
+                margin-top: 0;
+                margin-bottom: 10px;
+            }
+
+            &-4:first-of-type {
+                margin-top: 0;
+            }
+
         }
 
         p {
@@ -77,9 +75,6 @@
             margin-right: 20px;
         }
 
-
     }
-
-
 
 }

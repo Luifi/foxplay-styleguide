@@ -10,7 +10,7 @@
 .is-hidden {
   display: none; }
 
-.nav:after {
+.row:after, .row-hl:after, .nav:after {
   content: "";
   display: table;
   clear: both; }
@@ -240,7 +240,10 @@ th {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
+  -o-box-sizing: border-box; }
+
+*:focus,
+*:active {
   outline: 0; }
 
 body {
@@ -249,30 +252,19 @@ body {
   margin: 0;
   padding: 0; }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.headline-1, .headline-2, .headline-3, .headline-4, .headline-5 {
   font-weight: 300; }
-
-h1 {
+.headline-1 {
   font-size: 3rem; }
-
-h2 {
+.headline-2 {
   font-size: 2.25rem; }
-
-h3 {
+.headline-3 {
   font-size: 1.875rem; }
-
-h4 {
+.headline-4 {
   font-size: 1.5rem; }
-
-h5 {
+.headline-5 {
   font-size: 1.125rem; }
-
-h6 {
+.headline-6 {
   font-size: 0.875rem;
   font-weight: 400; }
 
@@ -291,20 +283,12 @@ p {
 img {
   border: none !important; }
 
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  list-style-type: none; }
-
-/*
-*
-* Base on Olivia Grid v1.2
-* Copyright 2014, Luis Chiappe
-* http://luifi.github.io/olivia/
-* luischiappe.com.ar
-*
-*/
+/**
+ * Base on Olivia Grid v1.2
+ * Copyright 2014, Luis Chiappe
+ * http://luifi.github.io/olivia/
+ * luischiappe.com.ar
+ */
 .container {
   margin: auto;
   max-width: 1600px;
@@ -318,22 +302,18 @@ li {
 .row {
   margin-left: -0.625rem;
   margin-right: -0.625rem;
-  /*---------- REMEMBER: By default all the box has full width ----------- */ }
+  /**
+   * REMEMBER: By default all the box has full width
+   */ }
   .row [class*='box'] {
     float: left;
     padding: 0.625rem;
-    width: 100%;
-    /* Floats last ".box-" to the right */
-    /* Fix gutter for nesting boxes */ }
+    width: 100%; }
     .row [class*='box']:last-of-type {
       float: right; }
     .row [class*='box'] .row {
       margin-bottom: -0.625rem;
       margin-top: 0.625rem; }
-  .row:after {
-    content: "";
-    display: table;
-    clear: both; }
   .row .box-1 {
     width: 100%; }
   .row .box-2 {
@@ -366,22 +346,18 @@ li {
 .row-hl {
   margin-left: 0.3125rem;
   margin-right: 0.3125rem;
-  /*---------- REMEMBER: By default all the box has full width ----------- */ }
+  /**
+   * REMEMBER: By default all the box has full width
+   */ }
   .row-hl [class*='box'] {
     float: left;
     padding: 0.3125rem;
-    width: 100%;
-    /* Floats last ".box-" to the right */
-    /* $gutter--highlight for nesting boxes */ }
+    width: 100%; }
     .row-hl [class*='box']:last-of-type {
       float: right; }
     .row-hl [class*='box'] .row-hl {
       margin-bottom: -0.3125rem;
       margin-top: 0.3125rem; }
-  .row-hl:after {
-    content: "";
-    display: table;
-    clear: both; }
   .row-hl .box-1 {
     width: 100%; }
   .row-hl .box-2 {
@@ -677,13 +653,17 @@ code {
   .code--red {
     background: #e3003e; }
 
-.nav ul > li {
-  position: relative;
-  display: inline-block; }
-  .nav ul > li > a {
-    display: inline-block;
-    width: inherit;
-    padding: 0.625rem 0.9375rem; }
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+  .nav ul > li {
+    position: relative;
+    display: inline-block; }
+    .nav ul > li > a {
+      display: inline-block;
+      width: inherit;
+      padding: 0.625rem 0.9375rem; }
 
 .nav--vertical ul > li {
   display: block; }
@@ -759,20 +739,20 @@ code {
     .nav--tabs--dark ul > li > a.active {
       background: #555; }
 
-#styleguide {
+.styleguide {
   background: #eee; }
-  #styleguide header {
+  .styleguide .sg-header {
     background: linear-gradient(45deg, #fabb00 10%, #f56800 90%);
     margin-bottom: 40px;
     text-align: center; }
-    #styleguide header h1 {
+    .styleguide .sg-header .headline-1 {
       color: white; }
-    #styleguide header h5 {
+    .styleguide .sg-header .headline-5 {
       color: rgba(0, 0, 0, 0.4); }
-    #styleguide header .navbar {
+    .styleguide .sg-header .navbar {
       background: rgba(0, 0, 0, 0.1);
       padding: 0.125rem 0; }
-  #styleguide .sg-block {
+  .styleguide .sg-block {
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -782,28 +762,23 @@ code {
     padding: 1.875rem;
     margin-bottom: 40px;
     overflow: hidden; }
-    #styleguide .sg-block--white {
+    .styleguide .sg-block--white {
       background: white; }
-    #styleguide .sg-block--black {
+    .styleguide .sg-block--black {
       background: #222;
       color: white;
       margin: 30px -20px -20px -20px;
       padding: 1.25rem; }
-    #styleguide .sg-block h1,
-    #styleguide .sg-block h2,
-    #styleguide .sg-block h3,
-    #styleguide .sg-block h4,
-    #styleguide .sg-block h5,
-    #styleguide .sg-block h6 {
+    .styleguide .sg-block .headline-1, .styleguide .sg-block .headline-2, .styleguide .sg-block .headline-3, .styleguide .sg-block .headline-4, .styleguide .sg-block .headline-5 {
       margin: 20px 0; }
-    #styleguide .sg-block h2 {
+    .styleguide .sg-block .headline-2 {
       margin-top: 0;
       margin-bottom: 10px; }
-    #styleguide .sg-block h4:first-of-type {
+    .styleguide .sg-block .headline-4:first-of-type {
       margin-top: 0; }
-    #styleguide .sg-block p {
+    .styleguide .sg-block p {
       margin: 10px 0; }
-    #styleguide .sg-block .icon {
+    .styleguide .sg-block .icon {
       margin-right: 20px; }
 
 /*# sourceMappingURL=main.css.map */

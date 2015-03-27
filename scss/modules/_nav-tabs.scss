@@ -1,57 +1,6 @@
 // ==========================================================================
-// Navs
+// Nav Tabs
 // ==========================================================================
-
-.nav {
-    @extend %clearfix;
-
-    ul {
-
-        > li {
-            position: relative;
-            display: inline-block;
-
-            > a {
-                display: inline-block;
-                width: inherit;
-                padding: rem(10px) rem(15px);
-            }
-        }
-    }
-
-}
-
-//Nav vertical
-
-.nav--vertical {
-
-    ul {
-
-        > li {
-            display: block;
-
-            > a {
-                padding: rem(8px) rem(14px);
-                width: 100%;
-                display: block;
-                border-left: 2px solid transparent;
-
-                &:hover {
-                    border-left: 2px solid $gray-20;
-                }
-
-                &.active {
-                    border-left: 2px solid $orange;
-                }
-
-            }
-        }
-    }
-
-}
-
-
-//Nav Tabs
 
 .nav--tabs {
 

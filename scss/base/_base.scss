@@ -4,9 +4,12 @@
 
 * {
 	@include box-sizing(border-box);
-  outline: 0;
 }
 
+*:focus,
+*:active {
+    outline: 0;
+}
 
 body {
   font-family: $font-family--roboto;
@@ -17,39 +20,37 @@ body {
 
 // Text
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: $font-weight--light;
-}
+.headline {
 
-h1 {
-  font-size: rem(48px);
-}
+  &-1, &-2, &-3, &-4, &-5 {
+    font-weight: $font-weight--light;
+  }
 
-h2 {
-  font-size: rem(36px);
-}
+  &-1 {
+    font-size: rem(48px);
+  }
 
-h3 {
-  font-size: rem(30px);
-}
+  &-2 {
+    font-size: rem(36px);
+  }
 
-h4 {
+  &-3 {
+    font-size: rem(30px);
+  }
 
-  font-size: rem(24px);
-}
+  &-4 {
+    font-size: rem(24px);
+  }
 
-h5 {
-  font-size: rem(18px);
-}
+  &-5 {
+    font-size: rem(18px);
+  }
 
-h6 {
-  font-size: rem(14px);
-  font-weight: $font-weight--medium;
+  &-6 {
+    font-size: rem(14px);
+    font-weight: $font-weight--medium;
+  }
+
 }
 
 a {
@@ -73,15 +74,6 @@ img {
   border: none !important;
 }
 
-
-// Lists
-
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
 
 
 

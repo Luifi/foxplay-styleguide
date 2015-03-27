@@ -1,11 +1,9 @@
-/*
-*
-* Base on Olivia Grid v1.2
-* Copyright 2014, Luis Chiappe
-* http://luifi.github.io/olivia/
-* luischiappe.com.ar
-*
-*/
+/**
+ * Base on Olivia Grid v1.2
+ * Copyright 2014, Luis Chiappe
+ * http://luifi.github.io/olivia/
+ * luischiappe.com.ar
+ */
 
 // ==========================================================================
 // Grid config
@@ -49,17 +47,20 @@ $gutter--hl  : .3125rem;
     margin-right: -$gutter;
 
     // Attribute selector
+
     [class*='box'] {
         float: left;
         padding: $gutter;
         width: $full-width; //
 
-        /* Floats last ".box-" to the right */
+        // Floats last ".box-" to the right
+
         &:last-of-type {
             float: right;
         }
 
-        /* Fix gutter for nesting boxes */
+        // Fix gutter for nesting boxes
+
         & .row {
             margin-bottom: -$gutter;
             margin-top: $gutter;
@@ -67,13 +68,13 @@ $gutter--hl  : .3125rem;
     }
 
     // Clearfix
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
 
-    /*---------- REMEMBER: By default all the box has full width ----------- */
+    @extend %clearfix;
+
+
+    /**
+     * REMEMBER: By default all the box has full width
+     */
 
     @for $i from $first through $last {
         .box-#{$i} {
@@ -94,7 +95,7 @@ $gutter--hl  : .3125rem;
 }
 
 // ==========================================================================
-// row Highligh
+// Grid Highligh
 // ==========================================================================
 
 .row-hl {
@@ -107,12 +108,14 @@ $gutter--hl  : .3125rem;
         padding:$gutter--hl;
         width: $full-width; //
 
-        /* Floats last ".box-" to the right */
+        // Floats last ".box-" to the right
+
         &:last-of-type {
             float: right;
         }
 
-        /* $gutter--highlight for nesting boxes */
+        // $gutter--highlight for nesting boxes
+
         & .row-hl {
             margin-bottom: -$gutter--hl;
             margin-top: $gutter--hl;
@@ -120,13 +123,12 @@ $gutter--hl  : .3125rem;
     }
 
     // Clearfix
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
 
-    /*---------- REMEMBER: By default all the box has full width ----------- */
+    @extend %clearfix;
+
+    /**
+     * REMEMBER: By default all the box has full width
+     */
 
     @for $i from $first through $last {
         .box-#{$i} {

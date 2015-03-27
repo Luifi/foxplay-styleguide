@@ -10,12 +10,12 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
-    <body id="styleguide">
+    <body class="styleguide">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <header>
+        <header class="sg-header">
 
             <div class="navbar container-fluid">
                 <div class="container">
@@ -31,8 +31,8 @@
 
             <div class="container">
                 <div class="text-group">
-                    <h1 class="text-group__title">Styleguide</h1>
-                    <h5 class="text-group__description">Visual resourses for Foxplay Designers & Developers</h5>
+                    <h1 class="text-group__title headline-1">Styleguide</h1>
+                    <h5 class="text-group__description headline-5">Visual resourses for Foxplay Designers & Developers</h5>
 
                     <div class="btn-group">
                         <a href="#" class="btn btn--border-white">Download</a>
@@ -45,6 +45,7 @@
         </header>
 
         <!-- STYLEGUIDE -->
+
         <div class="container">
             <div class="row">
                 <div class="box-5">
@@ -68,12 +69,13 @@
                 <div class="box-80">
 
                     <!-- Colors -->
+
                     <section id="colors" class="sg-block sg-block--white">
-                        <h2>Colors</h2>
+                        <h2 class="headline-2">Colors</h2>
                         <p>Todos los Colores podran aplicar siempre que se necesite. Encontrá las variables de SASS y el valor Hexadecimal acá. <code>scss/utilities/_variables.scss</code></p>
                         <div class="line-divider"></div>
 
-                        <h4>Brand:</h4>
+                        <h4 class="headline-4">Brand:</h4>
                         <div class="row">
                             <div class="box-6">
                                 <code class="code code--orange">$orange</code>
@@ -99,80 +101,81 @@
                     </section>
 
                     <!-- Headlines -->
+
                     <section id="headlines" class="sg-block sg-block--white">
-                        <h2>Headlines</h2>
+                        <h2 class="headline-2">Headlines</h2>
                         <p>Todos los Headlines podran usarse en cualquier lugar sin depender de un contexto. Los estilos los podras encontrar en <code>scss/base/_base.scss</code></p>
 
 
                         <div class="line-divider"></div>
 
-                        <h1>h1. Headline (48px)</h1>
-                        <h2>h2. Headline (36px)</h2>
-                        <h3>h3. Headline (30px)</h3>
-                        <h4>h4. Headline (24px)</h4>
-                        <h5>h5. Headline (18px)</h5>
-                        <h6>h6. Headline (14px)</h6>
+                        <h1 class="headline-1">h1. Headline (48px)</h1>
+                        <h2 class="headline-2">h2. Headline (36px)</h2>
+                        <h3 class="headline-3">h3. Headline (30px)</h3>
+                        <h4 class="headline-4">h4. Headline (24px)</h4>
+                        <h5 class="headline-5">h5. Headline (18px)</h5>
+                        <h6 class="headline-6">h6. Headline (14px)</h6>
                     </section>
 
                     <!-- Buttons -->
                     <section id="buttons" class="sg-block sg-block--white">
-                        <h2>Buttons</h2>
+                        <h2 class="headline-2">Buttons</h2>
                         <p>Todos los botones podran usarse en cualquier lugar sin depender de un contexto. Los estilos los podras encontrar en <code>scss/modules/_buttons.scss</code></p>
                         <p><i><b>*Note:</b> All buttons by default has a medium size. If you want to use a small or large button you need add the corresponding class.</i></p>
                         <div class="line-divider"></div>
 
-                        <h4>Types:</h4>
+                        <h4 class="headline-4">Types:</h4>
                         <a href="#" class="btn btn--border-dark">Button</a>
                         <a href="#" class="btn btn--fill-dark">Button</a>
 
-                        <h4>Full width:</h4>
+                        <h4 class="headline-4">Full width:</h4>
                         <a href="#" class="btn btn--border-dark btn--full-width">Button</a>
                         <a href="#" class="btn btn--fill-dark btn--full-width">Button</a>
 
-                        <h4>Group:</h4>
+                        <h4 class="headline-4">Group:</h4>
                         <div class="btn-group">
                             <a href="#" class="btn btn--border-dark">Button group</a>
                             <a href="#" class="btn btn--fill-dark">Button group</a>
                         </div>
 
 
-                        <h4>Size:</h4>
+                        <h4 class="headline-4">Size:</h4>
 
-                        <h6>Small</h6>
+                        <h6 class="headline-6">Small</h6>
 
                         <a href="#" class="btn btn--fill-dark btn--small">Button Small</a>
                         <a href="#" class="btn btn--border-dark btn--small">Button Small</a>
 
 
-                        <h6>Large</h6>
+                        <h6 class="headline-6">Large</h6>
 
                         <a href="#" class="btn btn--fill-dark btn--large">Button Large</a>
                         <a href="#" class="btn btn--border-dark btn--large">Button Large</a>
 
                         <article class="sg-block sg-block--black">
 
-                            <h4>Types:</h4>
+                            <h4 class="headline-4">Types:</h4>
                             <a href="#" class="btn btn--border-white">Button</a>
                             <a href="#" class="btn btn--fill-white">Button</a>
 
-                            <h4>Full width:</h4>
+                            <h4 class="headline-4">Full width:</h4>
                             <a href="#" class="btn btn--border-white btn--full-width">Button</a>
                             <a href="#" class="btn btn--fill-white btn--full-width">Button</a>
 
-                            <h4>Group:</h4>
+                            <h4 class="headline-4">Group:</h4>
                             <div class="btn-group">
                                 <a href="#" class="btn btn--border-white">Button group</a>
                                 <a href="#" class="btn btn--fill-white">Button group</a>
                             </div>
 
-                            <h4>Size:</h4>
+                            <h4 class="headline-4">Size:</h4>
 
-                            <h6>Small</h6>
+                            <h6 class="headline-6">Small</h6>
 
                             <a href="#" class="btn btn--fill-white btn--small">Button Small</a>
                             <a href="#" class="btn btn--border-white btn--small">Button Small</a>
 
-                            <h6>Large</h6>
+                            <h6 class="headline-6">Large</h6>
 
                             <a href="#" class="btn btn--fill-white btn--large">Button Large</a>
                             <a href="#" class="btn btn--border-white btn--large">Button Large</a>
@@ -183,12 +186,14 @@
 
 
                     <!-- Labels -->
+
                     <section id="labels" class="sg-block sg-block--white">
-                        <h2>Labels</h2>
+                        <h2 class="headline-2">Labels</h2>
                         <p>Todos los Labels podran usarse en cualquier lugar sin depender de un contexto. Los estilos los podras encontrar en <code>scss/modules/_labels.scss</code></p>
                         <div class="line-divider"></div>
 
-                        <h4>Types:</h4>
+                        <h4 class="headline-4">Types:</h4>
+
                         <span class="label label--series">series</span>
                         <span class="label label--sports">sports</span>
                         <span class="label label--lifestyle">lifestyle</span>
@@ -198,10 +203,12 @@
                         <span class="label label--movies">movies</span>
                         <span class="label label--live">En vivo</span>
 
-                        <h4>Parental Guide:</h4>
+                        <h4 class="headline-4">Parental Guide:</h4>
+
                         <span class="label label--pg label--pg-gray">Pg-14</span>
 
-                        <h4>Parental Guide Brasil:</h4>
+                        <h4 class="headline-4">Parental Guide Brasil:</h4>
+
                         <span class="label label--pg label--pg-green">Pg</span>
                         <span class="label label--pg label--pg-blue">Pg</span>
                         <span class="label label--pg label--pg-yellow">Pg</span>
@@ -211,14 +218,14 @@
 
                         <article class="sg-block sg-block--black">
 
-                            <h4>Fox+:</h4>
+                            <h4 class="headline-4">Fox+:</h4>
                             <span class="label label--foxmas">
                                 <svg class="logo logo--foxmas logo--black">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/logos.svg#foxmas"></use>
                                 </svg>
                             </span>
 
-                            <h4>Group:</h4>
+                            <h4 class="headline-4">Group:</h4>
                             <div class="label-group">
                                 <span class="label label--series">series</span>
                                 <span class="label label--foxmas">
@@ -242,14 +249,16 @@
 
 
                     <!-- ICONS BLACK -->
+
                     <section id="icons" class="sg-block sg-block--white">
-                        <h2>Icons</h2>
+                        <h2 class="headline-2">Icons</h2>
                         <p>Todos los iconos podran usarse en cualquier lugar sin depender de un contexto. Los estilos los podras encontrar en <code>scss/modules/_icons.scss</code></p>
                         <div class="line-divider"></div>
 
-                        <h4>Small:</h4>
+                        <h4 class="headline-4">Small:</h4>
 
                         <!-- Icon Avatar -->
+
                         <a href="#">
                             <svg class="icon icon--black icon--avatar icon--not-hover">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#avatar"></use>
@@ -257,6 +266,7 @@
                         </a>
 
                         <!-- Icon Question Small-->
+
                         <a href="#">
                             <svg class="icon icon--black icon--small">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#question-small"></use>
@@ -264,6 +274,7 @@
                         </a>
 
                         <!-- Icon My List Small-->
+
                         <a href="#">
                             <svg class="icon icon--black icon--small">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#my-list-small"></use>
@@ -271,6 +282,7 @@
                         </a>
 
                         <!-- Icon Alerts Small-->
+
                         <a href="#">
                             <svg class="icon icon--black icon--small">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#alerts-small"></use>
@@ -278,6 +290,7 @@
                         </a>
 
                         <!-- Icon Play Small-->
+
                         <a href="#">
                             <svg class="icon icon--black icon--small">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#play-small"></use>
@@ -285,6 +298,7 @@
                         </a>
 
                         <!-- Info Small-->
+
                         <a href="#">
                             <svg class="icon icon--black icon--small">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#info-small"></use>
@@ -292,6 +306,7 @@
                         </a>
 
                         <!-- Icon Circle Arrow Down -->
+
                         <a href="#">
                             <svg class="icon icon--black icon--small">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#circle-arrow"></use>
@@ -299,6 +314,7 @@
                         </a>
 
                         <!-- Icon Circle Arrow Up -->
+
                         <a href="#">
                             <svg class="icon icon--black icon--small icon--rotate-up">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#circle-arrow"></use>
@@ -306,6 +322,7 @@
                         </a>
 
                         <!-- Icon Circle Arrow Left -->
+
                         <a href="#">
                             <svg class="icon icon--black icon--small icon--rotate-left">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#circle-arrow"></use>
@@ -313,6 +330,7 @@
                         </a>
 
                         <!-- Icon Circle Arrow Right -->
+
                         <a href="#">
                             <svg class="icon icon--black icon--small icon--rotate-right">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#circle-arrow"></use>
@@ -320,6 +338,7 @@
                         </a>
 
                         <!-- Icon Arrow Down -->
+
                         <a href="#">
                             <svg class="icon icon--black icon--extra-small icon--not-hover">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#arrow"></use>
@@ -327,6 +346,7 @@
                         </a>
 
                         <!-- Icon Arrow Up -->
+
                         <a href="#">
                             <svg class="icon icon--black icon--extra-small icon--rotate-up icon--not-hover">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#arrow"></use>
@@ -334,6 +354,7 @@
                         </a>
 
                         <!-- Icon Arrow Left -->
+
                         <a href="#">
                             <svg class="icon icon--black icon--extra-small icon--rotate-left icon--not-hover">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#arrow"></use>
@@ -341,6 +362,7 @@
                         </a>
 
                         <!-- Icon Arrow Right -->
+
                         <a href="#">
                             <svg class="icon icon--black icon--extra-small icon--rotate-right icon--not-hover">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#arrow"></use>
@@ -348,14 +370,17 @@
                         </a>
 
                         <!-- Icon Loupe -->
+
                         <a href="#">
                             <svg class="icon icon--black icon--loupe icon--not-hover">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#loupe"></use>
                             </svg>
                         </a>
 
-                        <h4>Medium:</h4>
+                        <h4 class="headline-4">Medium:</h4>
+
                         <!-- Icon My list -->
+
                         <a href="#">
                             <svg class="icon icon--black">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#my-list"></use>
@@ -363,6 +388,7 @@
                         </a>
 
                         <!-- Icon Alerts -->
+
                         <a href="#">
                             <svg class="icon icon--black">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#alerts"></use>
@@ -370,6 +396,7 @@
                         </a>
 
                         <!-- Icon Share -->
+
                         <a href="#">
                             <svg class="icon icon--black">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#share"></use>
@@ -377,6 +404,7 @@
                         </a>
 
                         <!-- Icon Info -->
+
                         <a href="#">
                             <svg class="icon icon--black">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#info"></use>
@@ -384,6 +412,7 @@
                         </a>
 
                         <!-- Icon Recommendation -->
+
                         <a href="#">
                             <svg class="icon icon--black">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#recommendation"></use>
@@ -391,6 +420,7 @@
                         </a>
 
                         <!-- Icon Parental -->
+
                         <a href="#">
                             <svg class="icon icon--black">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#parental"></use>
@@ -398,6 +428,7 @@
                         </a>
 
                         <!-- Icon Question -->
+
                         <a href="#">
                             <svg class="icon icon--black">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#question"></use>
@@ -405,15 +436,17 @@
                         </a>
 
                         <!-- Icon Print -->
+
                         <a href="#">
                             <svg class="icon icon--black">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#print"></use>
                             </svg>
                         </a>
 
-                        <h4>Large:</h4>
+                        <h4 class="headline-4">Large:</h4>
 
                         <!-- Play large -->
+
                         <a href="#">
                             <svg class="icon icon--black icon--large icon--not-hover">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#play-large"></use>
@@ -421,11 +454,13 @@
                         </a>
 
                         <!-- ICONS WHITE -->
+
                         <article class="sg-block sg-block--black">
 
-                            <h4>Small:</h4>
+                            <h4 class="headline-4">Small:</h4>
 
                             <!-- Icon Avatar -->
+
                             <a href="#">
                                 <svg class="icon icon--white icon--avatar icon--not-hover">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#avatar"></use>
@@ -433,6 +468,7 @@
                             </a>
 
                             <!-- Icon Question Small-->
+
                             <a href="#">
                                 <svg class="icon icon--white icon--small">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#question-small"></use>
@@ -440,6 +476,7 @@
                             </a>
 
                             <!-- Icon My List Small-->
+
                             <a href="#">
                                 <svg class="icon icon--white icon--small">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#my-list-small"></use>
@@ -447,6 +484,7 @@
                             </a>
 
                             <!-- Icon Alerts Small-->
+
                             <a href="#">
                                 <svg class="icon icon--white icon--small">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#alerts-small"></use>
@@ -454,6 +492,7 @@
                             </a>
 
                             <!-- Icon Play Small-->
+
                             <a href="#">
                                 <svg class="icon icon--white icon--small">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#play-small"></use>
@@ -461,6 +500,7 @@
                             </a>
 
                             <!-- Icon Play Opacity Small-->
+
                             <a href="#">
                                 <svg class="icon icon--white icon--small icon--play--opacity">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#play-small--opacity"></use>
@@ -468,6 +508,7 @@
                             </a>
 
                             <!-- Info Small-->
+
                             <a href="#">
                                 <svg class="icon icon--white icon--small">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#info-small"></use>
@@ -475,6 +516,7 @@
                             </a>
 
                             <!-- Icon Circle Arrow Down -->
+
                             <a href="#">
                                 <svg class="icon icon--white icon--small">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#circle-arrow"></use>
@@ -482,6 +524,7 @@
                             </a>
 
                             <!-- Icon Circle Arrow Up -->
+
                             <a href="#">
                                 <svg class="icon icon--white icon--small icon--rotate-up">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#circle-arrow"></use>
@@ -489,6 +532,7 @@
                             </a>
 
                             <!-- Icon Circle Arrow Left -->
+
                             <a href="#">
                                 <svg class="icon icon--white icon--small icon--rotate-left">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#circle-arrow"></use>
@@ -496,6 +540,7 @@
                             </a>
 
                             <!-- Icon Circle Arrow Right -->
+
                             <a href="#">
                                 <svg class="icon icon--white icon--small icon--rotate-right">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#circle-arrow"></use>
@@ -503,6 +548,7 @@
                             </a>
 
                             <!-- Icon Arrow Down -->
+
                             <a href="#">
                                 <svg class="icon icon--white icon--extra-small icon--not-hover">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#arrow"></use>
@@ -510,6 +556,7 @@
                             </a>
 
                             <!-- Icon Arrow Up -->
+
                             <a href="#">
                                 <svg class="icon icon--white icon--extra-small icon--rotate-up icon--not-hover">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#arrow"></use>
@@ -517,6 +564,7 @@
                             </a>
 
                             <!-- Icon Arrow Left -->
+
                             <a href="#">
                                 <svg class="icon icon--white icon--extra-small icon--rotate-left icon--not-hover">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#arrow"></use>
@@ -524,6 +572,7 @@
                             </a>
 
                             <!-- Icon Arrow Right -->
+
                             <a href="#">
                                 <svg class="icon icon--white icon--extra-small icon--rotate-right icon--not-hover">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#arrow"></use>
@@ -531,14 +580,17 @@
                             </a>
 
                             <!-- Icon Loupe -->
+
                             <a href="#">
                                 <svg class="icon icon--white icon--loupe icon--not-hover">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#loupe"></use>
                                 </svg>
                             </a>
 
-                            <h4>Medium:</h4>
+                            <h4 class="headline-4">Medium:</h4>
+
                             <!-- Icon My list -->
+
                             <a href="#">
                                 <svg class="icon icon--white">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#my-list"></use>
@@ -546,6 +598,7 @@
                             </a>
 
                             <!-- Icon Alerts -->
+
                             <a href="#">
                                 <svg class="icon icon--white">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#alerts"></use>
@@ -553,6 +606,7 @@
                             </a>
 
                             <!-- Icon Share -->
+
                             <a href="#">
                                 <svg class="icon icon--white">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#share"></use>
@@ -560,6 +614,7 @@
                             </a>
 
                             <!-- Icon Info -->
+
                             <a href="#">
                                 <svg class="icon icon--white">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#info"></use>
@@ -567,6 +622,7 @@
                             </a>
 
                             <!-- Icon Recommendation -->
+
                             <a href="#">
                                 <svg class="icon icon--white">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#recommendation"></use>
@@ -574,6 +630,7 @@
                             </a>
 
                             <!-- Icon Parental -->
+
                             <a href="#">
                                 <svg class="icon icon--white">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#parental"></use>
@@ -581,6 +638,7 @@
                             </a>
 
                             <!-- Icon Question -->
+
                             <a href="#">
                                 <svg class="icon icon--white">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#question"></use>
@@ -588,15 +646,17 @@
                             </a>
 
                             <!-- Icon Print -->
+
                             <a href="#">
                                 <svg class="icon icon--white">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#print"></use>
                                 </svg>
                             </a>
 
-                            <h4>Large:</h4>
+                            <h4 class="headline-4">Large:</h4>
 
                             <!-- Play large -->
+
                             <a href="#">
                                 <svg class="icon icon--white icon--large icon--not-hover">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#play-large"></use>
@@ -610,24 +670,27 @@
 
 
                     <!-- Logos -->
+
                     <section id="logos" class="sg-block sg-block--white">
-                        <h2>Logos</h2>
+                        <h2 class="headline-2">Logos</h2>
                         <p>Todos los Logos podran usarse en cualquier lugar sin depender de un contexto. Los estilos los podras encontrar en <code>scss/modules/_logos.scss</code></p>
                         <div class="line-divider"></div>
 
                     </section>
 
                     <!-- Dropdowns -->
+
                     <section id="dropdowns" class="sg-block sg-block--white">
-                        <h2>Dropdowns</h2>
+                        <h2 class="headline-2">Dropdowns</h2>
                         <p>Todos los ____ podran usarse en cualquier lugar sin depender de un contexto. Los estilos los podras encontrar en <code>scss/modules/_dropdown.scss</code></p>
                         <div class="line-divider"></div>
 
-                    </section>
+                    </section> <!-- / Dropdowns -->
 
                     <!-- Navtab -->
+
                     <section id="navtab" class="sg-block sg-block--white">
-                        <h2>Navtab</h2>
+                        <h2 class="headline-2">Navtab</h2>
                         <p>Todos los ____ podran usarse en cualquier lugar sin depender de un contexto. Los estilos los podras encontrar en <code>scss/modules/_navs.scss</code></p>
                         <div class="line-divider"></div>
 
@@ -656,16 +719,18 @@
                     </section>
 
                     <!-- Forms Elements -->
+
                     <section id="forms" class="sg-block sg-block--white">
-                        <h2>Forms Elements</h2>
+                        <h2 class="headline-2">Forms Elements</h2>
                         <p>Todos los ____ podran usarse en cualquier lugar sin depender de un contexto. Los estilos los podras encontrar en <code>scss/modules/_forms.scss</code></p>
                         <div class="line-divider"></div>
 
                     </section>
 
                     <!-- Tooltip -->
+
                     <section id="tooltip" class="sg-block sg-block--white">
-                        <h2>Tooltip</h2>
+                        <h2 class="headline-2">Tooltip</h2>
                         <p>Todos los ____ podran usarse en cualquier lugar sin depender de un contexto. Los estilos los podras encontrar en <code>scss/modules/_tooltip.scss</code></p>
                         <div class="line-divider"></div>
 
