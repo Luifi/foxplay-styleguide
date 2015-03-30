@@ -64,11 +64,10 @@
 
     &-group {
 
-        // If the group is inside ".f-package" use those styles
+        // If the group is inside ".f-package" used those styles
         .f-package & {
             float: left;
             margin-right: 10px;
-
         }
 
         &__label, &__input {
