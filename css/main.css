@@ -367,7 +367,7 @@ img {
 .btn {
   display: inline-block;
   margin: 0;
-  padding: 0.75rem 1.25rem;
+  padding: 0.625rem 1.25rem;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -691,21 +691,25 @@ code {
   background: none;
   border: none;
   font-weight: 300;
-  -webkit-appearance: none; }
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
 
 .f-search, .f-select__select {
-  padding: 0.5rem 0.625rem; }
+  padding: 0.5625rem 0.625rem; }
 
 .f-search__loupe {
   float: right; }
   .f-search__loupe svg {
     margin-right: 0 !important; }
+.f-search__input {
+  width: 89%; }
 .f-select__arrow {
   position: absolute;
   top: 0;
   right: 0;
   border-left: 1px solid #ccc;
-  padding: 0.5rem 0.875rem; }
+  padding: 0.625rem 0.875rem; }
   .f-select__arrow svg {
     margin-right: 0 !important; }
 .f-select__select {
@@ -742,7 +746,7 @@ code {
 
 .nav-tabs__item a, .nav-tabs--dark__item a {
   text-align: center;
-  padding: 0.5rem 1.375rem;
+  padding: 0.625rem 1.375rem;
   display: inline-block;
   width: inherit; }
 
@@ -753,7 +757,7 @@ code {
   bottom: -7px;
   margin-left: -7px; }
 .nav-tabs__item.is-active a::after, .nav-tabs--dark__item.is-active a::after {
-  top: 34px;
+  top: 38px;
   margin-left: -8px; }
 
 .nav-tabs__item {

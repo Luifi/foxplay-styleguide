@@ -39,11 +39,15 @@
     background: none;
     border: none;
     font-weight: $font-weight--light;
+    appearance: none;
       -webkit-appearance: none;
+      -moz-appearance: none;
 }
 
+// Padding inputs
+
 %f-padding-input {
-    padding: rem(8px) rem(10px);
+    padding: rem(9px) rem(10px);
 }
 
 // ==========================================================================
@@ -68,6 +72,7 @@
 
         @include e(input) {
             @extend %f-gral-input;
+            width: 89%;
         }
 
     }
@@ -82,7 +87,7 @@
             top: 0;
             right: 0;
             border-left: 1px solid $gray-20;
-            padding: rem(8px) rem(14px);
+            padding: rem(10px) rem(14px);
 
             svg {
                 margin-right: 0 !important; // remover este estilo, esta aplicado solo para icons del sg
