@@ -691,7 +691,6 @@ code {
   float: right; }
   .f-search__loupe svg {
     margin-right: 0 !important; }
-
 .f-select__arrow {
   position: absolute;
   top: 0;
@@ -704,6 +703,10 @@ code {
   position: relative;
   width: 100%;
   cursor: pointer; }
+.f--half-width {
+  width: 50%; }
+.f--full-width {
+  width: 100%; }
 
 .nav {
   margin: 0;

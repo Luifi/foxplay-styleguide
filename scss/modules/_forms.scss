@@ -21,6 +21,10 @@
 }
 
 
+// ==========================================================================
+// Extends for Forms
+// ==========================================================================
+
 // General Form styles
 
 %f-gral  {
@@ -42,51 +46,73 @@
     padding: rem(8px) rem(10px);
 }
 
+// ==========================================================================
+// Forms BEM
+// ==========================================================================
 
-// Input Search
+.f {
 
-.f-search {
-    @extend %f-gral;
-    @extend %f-padding-input;
+    // Input Search
 
-    @include e(loupe) {
-        float: right;
-
-        svg {
-            margin-right: 0 !important; // remover este estilo, esta aplicado solo para icons del sg
-        }
-    }
-
-    @include e(input) {
-        @extend %f-gral-input;
-    }
-
-}
-
-// Select
-
-.f-select {
-    @extend %f-gral;
-
-    @include e(arrow) {
-        position: absolute;
-        top: 0;
-        right: 0;
-        border-left: 1px solid $gray-20;
-        padding: rem(8px) rem(14px);
-
-        svg {
-            margin-right: 0 !important; // remover este estilo, esta aplicado solo para icons del sg
-        }
-    }
-
-    @include e(select) {
-        position: relative;
-        width: 100%;
-        cursor: pointer;
+    &-search {
+        @extend %f-gral;
         @extend %f-padding-input;
-        @extend %f-gral-input;
+
+        @include e(loupe) {
+            float: right;
+
+            svg {
+                margin-right: 0 !important; // remover este estilo, esta aplicado solo para icons del sg
+            }
+        }
+
+        @include e(input) {
+            @extend %f-gral-input;
+        }
+
+    }
+
+    // Select
+
+    &-select {
+        @extend %f-gral;
+
+        @include e(arrow) {
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-left: 1px solid $gray-20;
+            padding: rem(8px) rem(14px);
+
+            svg {
+                margin-right: 0 !important; // remover este estilo, esta aplicado solo para icons del sg
+            }
+        }
+
+        @include e(select) {
+            position: relative;
+            width: 100%;
+            cursor: pointer;
+            @extend %f-padding-input;
+            @extend %f-gral-input;
+        }
+
+    }
+
+
+    // Half width (50%)
+
+    @include m(half-width) {
+        width: 50%;
+    }
+
+
+    // Full Width (100%)
+
+    @include m(full-width) {
+        width: 100%;
     }
 
 }
+
 
