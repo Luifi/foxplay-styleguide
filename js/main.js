@@ -7,8 +7,8 @@ $(document).ready(function(){
     // Active Navs
 
     var activeNav = function(item, items) {
-        $(items).parent().siblings().removeClass('active');
-        $(item).parent().addClass('active');
+        $(items).parent().siblings().removeClass('is-active');
+        $(item).parent().addClass('is-active');
     }
 
     $('.nav a').click(function(){

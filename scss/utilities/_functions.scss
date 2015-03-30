@@ -8,7 +8,7 @@
   @import url($font-url--google);
 }
 
-// Calculate em values
+// Calculate rem values
 
 @function rem($target, $context: 16px) {
     @return ($target / $context) * 1rem;

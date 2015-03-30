@@ -98,7 +98,7 @@ $gutter--hl  : .3125rem;
 // Grid Highligh
 // ==========================================================================
 
-.row-hl {
+.hl-row {
     margin-left: $gutter--hl;
     margin-right: $gutter--hl;
 
@@ -125,6 +125,7 @@ $gutter--hl  : .3125rem;
     // Clearfix
 
     @extend %clearfix;
+
 
     /**
      * REMEMBER: By default all the box has full width

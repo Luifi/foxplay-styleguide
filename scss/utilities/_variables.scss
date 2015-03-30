@@ -2,7 +2,6 @@
 // Variables
 // ==========================================================================
 
-
 // Font Stacks
 
 $font-url--google       : 'http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic';
@@ -44,14 +43,14 @@ $red        : #e3003e;
 $gold       : #b89f6f;
 
 $color-gradient     : linear-gradient(to right, #ff6c00 0%,#b60098 25%,#009ee0 50%,#a5ba00 75%,#fabb00 100%);
-$color-series       : $orange; // Series
-$color-sports       : $light-blue; // Deportes
-$color-lifestyle    : $purple; // Estilo de vida
-$color-factual      : $yellow; // Documentales
-$color-kids         : $green; // Kids
-$color-movies       : $red; // Movies -- OLD #95a61c
-$color-premium      : $gold; // Fox+ dorado
-$color-mundo-fox    : #e2003b; // Mundo Fox
+$color-series       : $orange;      // Series
+$color-sports       : $light-blue;  // Deportes
+$color-lifestyle    : $purple;      // Estilo de vida
+$color-factual      : $yellow;      // Documentales
+$color-kids         : $green;       // Kids
+$color-movies       : $red;         // Movies -- OLD #95a61c
+$color-premium      : $gold;        // Fox+ dorado
+$color-mundo-fox    : #e2003b;      // Mundo Fox
 
 
 // Media Queries Breakpoints

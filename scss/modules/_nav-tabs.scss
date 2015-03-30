@@ -62,7 +62,7 @@
             }
         }
 
-        &.active {
+        &.is-active {
 
             a {
                 @extend %nav-tab-item-active;
@@ -107,7 +107,7 @@
                 }
             }
 
-            &.active {
+            &.is-active {
 
                 a {
                     @extend %nav-tab-item-active;

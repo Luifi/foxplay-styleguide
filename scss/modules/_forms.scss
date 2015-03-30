@@ -1,3 +1,92 @@
 // ==========================================================================
 // Forms
 // ==========================================================================
+
+// Placeholder
+
+::-webkit-input-placeholder {
+   color: $gray-80;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: $gray-80;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $gray-80;
+}
+
+:-ms-input-placeholder {
+   color: $gray-80;
+}
+
+
+// General Form styles
+
+%f-gral  {
+    @include radius(4px, $gray-20);
+    position: relative;
+    width: 230px;
+}
+
+// General inputs styles
+
+%f-gral-input {
+    background: none;
+    border: none;
+    font-weight: $font-weight--light;
+      -webkit-appearance: none;
+}
+
+%f-padding-input {
+    padding: rem(8px) rem(10px);
+}
+
+
+// Input Search
+
+.f-search {
+    @extend %f-gral;
+    @extend %f-padding-input;
+
+    @include e(loupe) {
+        float: right;
+
+        svg {
+            margin-right: 0 !important; // remover este estilo, esta aplicado solo para icons del sg
+        }
+    }
+
+    @include e(input) {
+        @extend %f-gral-input;
+    }
+
+}
+
+// Select
+
+.f-select {
+    @extend %f-gral;
+
+    @include e(arrow) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-left: 1px solid $gray-20;
+        padding: rem(8px) rem(14px);
+
+        svg {
+            margin-right: 0 !important; // remover este estilo, esta aplicado solo para icons del sg
+        }
+    }
+
+    @include e(select) {
+        position: relative;
+        width: 100%;
+        cursor: pointer;
+        @extend %f-padding-input;
+        @extend %f-gral-input;
+    }
+
+}
+

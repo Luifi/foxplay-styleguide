@@ -52,7 +52,7 @@
 
                     <nav>
                         <ul class="nav nav-vertical">
-                            <li class="nav-vertical__item active"><a href="#colors">Colors</a></li>
+                            <li class="nav-vertical__item is-active"><a href="#colors">Colors</a></li>
                             <li class="nav-vertical__item"><a href="#headlines">Headlines</a></li>
                             <li class="nav-vertical__item"><a href="#buttons">Buttons</a></li>
                             <li class="nav-vertical__item"><a href="#labels">Labels</a></li>
@@ -248,7 +248,7 @@
                     </section>
 
 
-                    <!-- ICONS BLACK -->
+                    <!-- Icons Black -->
 
                     <section id="icons" class="sg-block sg-block--white">
                         <h2 class="headline-2">Icons</h2>
@@ -453,7 +453,7 @@
                             </svg>
                         </a>
 
-                        <!-- ICONS WHITE -->
+                        <!-- Icons White -->
 
                         <article class="sg-block sg-block--black">
 
@@ -697,7 +697,7 @@
 
                         <nav>
                             <ul class="nav nav-tabs">
-                                <li class="nav-tabs__item active"><a href="#a">Tab 1</a></li>
+                                <li class="nav-tabs__item is-active"><a href="#a">Tab 1</a></li>
                                 <li class="nav-tabs__item"><a href="#b">Tab 2</a></li>
                                 <li class="nav-tabs__item"><a href="#c">Tab 3</a></li>
                                 <li class="nav-tabs__item"><a href="#d">Tab 4</a></li>
@@ -708,7 +708,7 @@
 
                             <nav>
                                 <ul class="nav nav-tabs--dark">
-                                    <li class="nav-tabs--dark__item active"><a href="#a">Tab 1</a></li>
+                                    <li class="nav-tabs--dark__item is-active"><a href="#a">Tab 1</a></li>
                                     <li class="nav-tabs--dark__item"><a href="#b">Tab 2</a></li>
                                     <li class="nav-tabs--dark__item"><a href="#c">Tab 3</a></li>
                                     <li class="nav-tabs--dark__item"><a href="#d">Tab 4</a></li>
@@ -726,6 +726,37 @@
                         <h2 class="headline-2">Forms Elements</h2>
                         <p>Todos los ____ podran usarse en cualquier lugar sin depender de un contexto. Los estilos los podras encontrar en <code>scss/modules/_forms.scss</code></p>
                         <div class="line-divider"></div>
+
+                        <form action="">
+
+                            <h4 class="headline-4">Search:</h4>
+
+                            <div class="f-search">
+                                <a class="f-search__loupe" href="#a">
+                                    <svg class="icon icon--black icon--loupe icon--not-hover">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#loupe"></use>
+                                    </svg>
+                                </a>
+                                <input class="f-search__input" type="search" placeholder="¿Qué estas buscando?" />
+                            </div>
+
+                            <h4 class="headline-4">Select:</h4>
+
+                            <div class="f-select">
+                                <span class="f-select__arrow" href="#a">
+                                    <svg class="icon icon--black icon--extra-small icon--not-hover">
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#arrow"></use>
+                                    </svg>
+                                </span>
+                                <select class="f-select__select" name="" id="">
+                                    <option value="none" name="none" >Seleccionar</option>
+                                    <option value="" name="" ></option>
+                                    <option value="" name="" ></option>
+                                    <option value="" name="" ></option>
+                                </select>
+                            </div>
+
+                        </form>
 
                     </section> <!-- / Forms Elements -->
 

@@ -11,14 +11,15 @@
   margin: 20px 0;
 }
 
-// Fixed
+// Push Left
 
-.is-fixed {
-    position: fixed;
+.push-left {
+    float: left;
 }
 
-// Hidden
+// Push Right
 
-.is-hidden {
-    display: none;
+.push-right {
+    float: right;
 }
+
