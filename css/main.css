@@ -1,4 +1,4 @@
-.row:after, .hl-row:after, .nav:after {
+.row:after, .hl-row:after, .f-package .f-group:after, .nav:after {
   content: "";
   display: table;
   clear: both; }

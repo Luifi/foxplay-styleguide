@@ -65,9 +65,11 @@
     &-group {
 
         // If the group is inside ".f-package" used those styles
+
         .f-package & {
             float: left;
             margin-right: 10px;
+            @extend %clearfix;
         }
 
         &__label, &__input {
