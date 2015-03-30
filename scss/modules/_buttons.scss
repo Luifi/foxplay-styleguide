@@ -23,6 +23,7 @@
         margin-bottom: 10px;
     }
 
+
     // Size
 
     @include m(small) {
@@ -34,6 +35,7 @@
         font-size: rem(18px);
         padding: rem(18px) rem(24px);
     }
+
 
     // Style Border
 
@@ -56,6 +58,7 @@
             color: darken($white, 5%);
         }
     }
+
 
     // Style Fill
 

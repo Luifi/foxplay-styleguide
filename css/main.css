@@ -709,7 +709,7 @@ code {
   top: 0;
   right: 0;
   border-left: 1px solid #ccc;
-  padding: 0.625rem 0.875rem; }
+  padding: 0.5625rem 0.875rem; }
   .f-select__arrow svg {
     margin-right: 0 !important; }
 .f-select__select {

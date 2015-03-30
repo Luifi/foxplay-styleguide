@@ -33,6 +33,7 @@
     width: 230px;
 }
 
+
 // General inputs styles
 
 %f-gral-input {
@@ -44,11 +45,13 @@
       -moz-appearance: none;
 }
 
+
 // Padding inputs
 
-%f-padding-input {
+%f-gral-padding {
     padding: rem(9px) rem(10px);
 }
+
 
 // ==========================================================================
 // Forms BEM
@@ -60,7 +63,7 @@
 
     &-search {
         @extend %f-gral;
-        @extend %f-padding-input;
+        @extend %f-gral-padding;
 
         @include e(loupe) {
             float: right;
@@ -77,6 +80,7 @@
 
     }
 
+
     // Select
 
     &-select {
@@ -87,7 +91,7 @@
             top: 0;
             right: 0;
             border-left: 1px solid $gray-20;
-            padding: rem(10px) rem(14px);
+            padding: rem(9px) rem(14px);
 
             svg {
                 margin-right: 0 !important; // remover este estilo, esta aplicado solo para icons del sg
@@ -98,7 +102,7 @@
             position: relative;
             width: 100%;
             cursor: pointer;
-            @extend %f-padding-input;
+            @extend %f-gral-padding;
             @extend %f-gral-input;
         }
 
