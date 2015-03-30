@@ -36,52 +36,51 @@
     }
 }
 
+
+// Nav Tabs
+
 .nav-tabs {
 
-    // Gray
+    @include e(item) {
+        @extend %nav-tab-item;
+        border: 1px solid $gray-20;
+        border-left: none;
 
-    @include m(gray) {
+        &:first-child {
+            @include radius(5px 0 0 5px, $gray-20);
+        }
 
-        @include e(item) {
-            @extend %nav-tab-item;
-            border: 1px solid $gray-20;
+        &:last-child {
+            @include radius(0 5px 5px 0, $gray-20);
             border-left: none;
+        }
 
-            &:first-child {
-                @include radius(5px 0 0 5px, $gray-20);
+        a {
+            @extend %nav-tab-item-a;
+            &:hover {
+                background: $gray-13;
             }
+        }
 
-            &:last-child {
-                @include radius(0 5px 5px 0, $gray-20);
-                border-left: none;
-            }
+        &.active {
 
             a {
-                @extend %nav-tab-item-a;
-                &:hover {
-                    background: $gray-13;
+                @extend %nav-tab-item-active;
+                background: $gray-20;
+
+                &::before {
+                    @extend %stroke-arrow-bottom-gray;
                 }
-            }
 
-            &.active {
-
-                a {
-                    @extend %nav-tab-item-active;
-                    background: $gray-20;
-
-                    &::before {
-                        @extend %stroke-arrow-bottom-gray;
-                    }
-
-                    &::after {
-                        @extend %arrow-bottom-gray;
-                    }
+                &::after {
+                    @extend %arrow-bottom-gray;
                 }
             }
         }
     }
 
-    // White
+
+    // Dark Modifier
 
     @include m(dark) {
 
