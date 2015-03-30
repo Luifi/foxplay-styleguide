@@ -31,10 +31,11 @@
     @include radius(4px, $gray-20);
     position: relative;
     width: 230px;
+    height: 40px;
 }
 
 
-// General inputs styles
+// General inputs styles * When the styles doesn't applied on the input tag
 
 %f-gral-input {
     background: none;
@@ -58,6 +59,32 @@
 // ==========================================================================
 
 .f {
+
+    // Form Group
+
+    &-group {
+
+        // If the group is inside ".f-package" use those styles
+        .f-package & {
+            float: left;
+            margin-right: 10px;
+
+        }
+
+        &__label, &__input {
+            display: block;
+            font-weight: $font-weight--light;
+        }
+
+        @include e(label) {
+            margin-bottom: 5px;
+        }
+
+        @include e(input) {
+            @extend %f-gral;
+            @extend %f-gral-padding;
+        }
+    }
 
     // Input Search
 
