@@ -854,13 +854,13 @@ code {
     display: block;
     width: 100%; }
     .dropdown-toggle .icon {
-      margin-left: 10px;
-      margin-right: initial; }
+      margin-left: 10px; }
   .dropdown-box {
     position: absolute;
     z-index: 9999;
     top: 100%;
     min-width: 220px;
+    display: none;
     background: #fff;
     border-radius: 4px;
     -webkit-border-radius: 4px;

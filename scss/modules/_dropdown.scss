@@ -30,23 +30,27 @@
     max-width: 460px;
     margin: 20px auto; // Solo para sg
 
+
+    // DD Toggle
+
     &-toggle {
         display: block;
         width: 100%; // Solo para sg
 
-
         .icon {
             margin-left: 10px;
-            margin-right: initial; // Resetea el estilo que tienen los iconos del sg
         }
     }
+
+
+    // DD Box
 
     &-box {
         position: absolute;
         z-index: 9999;
         top: 100%;
         min-width: 220px;
-        // display: none;
+        display: none;
         background: $white;
         @include radius(4px, $gray-20);
         @include shadow(0 0 4px 1px rgba(0,0,0,.3));
@@ -99,9 +103,10 @@
             }
         }
 
-
-
     }
+
+
+    // Show DD
 
     &:hover {
 
