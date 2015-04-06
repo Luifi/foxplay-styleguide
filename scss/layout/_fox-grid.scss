@@ -48,7 +48,7 @@ $gutter--hl  : .3125rem;
 
     // Attribute selector
 
-    [class*='box'] {
+    [class^='box'] {
         float: left;
         padding: $gutter;
         width: $full-width; //
@@ -103,7 +103,7 @@ $gutter--hl  : .3125rem;
     margin-right: $gutter--hl;
 
     // Attribute selector
-    [class*='box'] {
+    [class^='box'] {
         float: left;
         padding:$gutter--hl;
         width: $full-width; //

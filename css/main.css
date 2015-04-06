@@ -274,13 +274,13 @@ img {
   /**
    * REMEMBER: By default all the box has full width
    */ }
-  .row [class*='box'] {
+  .row [class^='box'] {
     float: left;
     padding: 0.625rem;
     width: 100%; }
-    .row [class*='box']:last-of-type {
+    .row [class^='box']:last-of-type {
       float: right; }
-    .row [class*='box'] .row {
+    .row [class^='box'] .row {
       margin-bottom: -0.625rem;
       margin-top: 0.625rem; }
   .row .box-1 {
@@ -318,13 +318,13 @@ img {
   /**
    * REMEMBER: By default all the box has full width
    */ }
-  .hl-row [class*='box'] {
+  .hl-row [class^='box'] {
     float: left;
     padding: 0.3125rem;
     width: 100%; }
-    .hl-row [class*='box']:last-of-type {
+    .hl-row [class^='box']:last-of-type {
       float: right; }
-    .hl-row [class*='box'] .row-hl {
+    .hl-row [class^='box'] .row-hl {
       margin-bottom: -0.3125rem;
       margin-top: 0.3125rem; }
   .hl-row .box-1 {
@@ -373,6 +373,7 @@ img {
   cursor: pointer;
   white-space: nowrap;
   font-weight: 300;
+  background: transparent;
   transition: 0.1s all linear;
   -webkit-transition: 0.1s all linear;
   -moz-transition: 0.1s all linear;
@@ -818,6 +819,40 @@ code {
   .nav-tabs--dark__item.is-active a {
     background: #555; }
 
+.dropdown {
+  position: relative;
+  margin-bottom: 20px; }
+  .dropdown__toggle {
+    display: block; }
+    .dropdown__toggle .icon {
+      margin-left: 10px;
+      margin-right: initial; }
+  .dropdown__box {
+    position: absolute;
+    z-index: 9999;
+    top: 100%;
+    margin-top: 5px;
+    min-width: 220px;
+    display: none;
+    background: #fff;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+    -ms-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3); }
+    .dropdown__box--left {
+      left: 0; }
+    .dropdown__box--right {
+      right: 0; }
+  .dropdown:hover > .dropdown__box {
+    display: block; }
+
 .styleguide {
   background: #eee; }
   .styleguide .sg-header {
@@ -831,33 +866,36 @@ code {
     .styleguide .sg-header .navbar {
       background: rgba(0, 0, 0, 0.1);
       padding: 0.125rem 0; }
-  .styleguide .sg-block {
-    border-radius: 4px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    border: 1px solid transparent;
-    padding: 1.875rem;
-    margin-bottom: 40px;
-    overflow: hidden; }
-    .styleguide .sg-block--white {
-      background: #fff; }
-    .styleguide .sg-block--black {
-      background: #222;
-      color: #fff;
-      margin: 30px -20px -20px -20px;
-      padding: 1.25rem; }
-    .styleguide .sg-block .headline-1, .styleguide .sg-block .headline-2, .styleguide .sg-block .headline-3, .styleguide .sg-block .headline-4, .styleguide .sg-block .headline-5, .styleguide .sg-block .headline-6 {
-      margin: 20px 0; }
-    .styleguide .sg-block .headline-2 {
-      margin-top: 0;
-      margin-bottom: 10px; }
-    .styleguide .sg-block .headline-4:first-of-type {
-      margin-top: 0; }
-    .styleguide .sg-block p {
-      margin: 10px 0; }
-    .styleguide .sg-block .icon {
-      margin-right: 20px; }
+  .styleguide #icons .icon {
+    margin-right: 20px; }
+  .styleguide #dropdowns {
+    min-height: 600px; }
+
+.sg-block {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 1.875rem;
+  margin-bottom: 40px;
+  overflow: hidden; }
+  .sg-block--white {
+    background: #fff; }
+  .sg-block--black {
+    background: #222;
+    color: #fff;
+    margin: 30px -20px -20px -20px;
+    padding: 1.25rem; }
+  .sg-block .headline-1, .sg-block .headline-2, .sg-block .headline-3, .sg-block .headline-4, .sg-block .headline-5, .sg-block .headline-6 {
+    margin: 20px 0; }
+  .sg-block .headline-2 {
+    margin-top: 0;
+    margin-bottom: 10px; }
+  .sg-block .headline-4:first-of-type {
+    margin-top: 0; }
+  .sg-block p {
+    margin: 10px 0; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,51 @@
+// ==========================================================================
+// Dropdown
+// ==========================================================================
+
+.dropdown {
+    position: relative;
+    margin-bottom: 20px;
+
+    @include e(toggle) {
+        display: block;
+
+        .icon {
+            margin-left: 10px;
+            margin-right: initial; // Resetea el estilo que tienen los iconos del sg
+        }
+    }
+
+    @include e(box) {
+        position: absolute;
+        z-index: 9999;
+        top: 100%;
+        margin-top: 5px;
+        min-width: 220px;
+        display: none;
+        background: $white;
+        @include radius(4px, $gray-20);
+        @include shadow(0 0 4px 1px rgba(0,0,0,.3));
+
+
+        // Show on the left
+
+        @include m(left) {
+            left: 0;
+        }
+
+
+        // Show on the right
+
+        @include m(right) {
+            right: 0;
+        }
+    }
+
+    &:hover {
+
+        > .dropdown__box {
+            display: block;
+        }
+
+    }
+}

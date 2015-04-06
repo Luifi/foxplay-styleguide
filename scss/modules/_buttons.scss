@@ -11,6 +11,7 @@
     cursor: pointer;
     white-space: nowrap;
     font-weight: $font-weight--light;
+    background: transparent;
     @include transition(.1s all linear);
     @include radius(100px, transparent);
 
