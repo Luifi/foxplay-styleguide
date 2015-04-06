@@ -64,8 +64,8 @@
 
     &-package {
         overflow: hidden;
-
     }
+
 
     // Form Group
 
@@ -92,6 +92,7 @@
             @extend %f-gral-padding;
         }
     }
+
 
     // Input Search
 
@@ -125,7 +126,7 @@
             top: 0;
             right: 0;
             border-left: 1px solid $gray-20;
-            padding: rem(9px) rem(14px);
+            padding: rem(9.5px) rem(14px);
 
             svg {
                 margin-right: 0 !important; // remover este estilo, esta aplicado solo para icons del sg

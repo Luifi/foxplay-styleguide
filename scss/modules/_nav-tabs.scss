@@ -13,13 +13,13 @@
     border-left: none;
     position: relative;
     display: inline-block;
+    width: 25%; // Reveer este estilo, 25% es solo si son 4 items.
 }
 
 %nav-tab-item-a {
     text-align: center;
     padding: rem(9.5px) rem(22px);
-    display: inline-block;
-    width: inherit;
+    display: block;
 }
 
 %nav-tab-item-active {

@@ -73,37 +73,39 @@
 
     // pg label
 
-    @include m(pg) {
+    &-pg {
         @include radius(4px, transparent);
+
+        @include m(gray) {
+            background: $gray-80;
+        }
+
+        @include m(green) {
+            background: #0c9447;
+        }
+
+        @include m(blue) {
+            background: #0f7dc2;
+        }
+
+        @include m(yellow) {
+            background: #f8c411;
+        }
+
+        @include m(orange) {
+            background: #e67824;
+        }
+
+        @include m(red) {
+            background: #db2827;
+        }
+
+        @include m(black) {
+            background: #1d1815;
+        }
     }
 
-    @include m(pg-gray) {
-        background: $gray-80;
-    }
 
-    @include m(pg-green) {
-        background: #0c9447;
-    }
-
-    @include m(pg-blue) {
-        background: #0f7dc2;
-    }
-
-    @include m(pg-yellow) {
-        background: #f8c411;
-    }
-
-    @include m(pg-orange) {
-        background: #e67824;
-    }
-
-    @include m(pg-red) {
-        background: #db2827;
-    }
-
-    @include m(pg-black) {
-        background: #1d1815;
-    }
 
 }
 
