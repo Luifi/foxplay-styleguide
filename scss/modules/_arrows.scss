@@ -2,6 +2,14 @@
 // Arrows
 // ==========================================================================
 
+// Arrow gral
+
+%arrow {
+    &::before,
+    &::after {
+       content: '';
+    }
+}
 // Arrow bottom Gray #ddd
 
 %arrow-bottom-gray {
@@ -24,4 +32,13 @@
 }
 
 
-// Arrow top
+// Arrow top white
+
+%arrow-top-white {
+    @include arrow(top, $white, 8px);
+}
+
+%stroke-arrow-top-white {
+    @include arrow(top, $gray-80, 7px);
+}
+

@@ -2,12 +2,38 @@
 // Dropdown
 // ==========================================================================
 
+// ==========================================================================
+// Extend for Dropdowns
+// ==========================================================================
+
+%dropdown-box-arrow {
+    @extend %arrow;
+
+    &::before {
+        top: -7px;
+        @extend %stroke-arrow-top-white;
+    }
+
+    &::after {
+        top: -7px;
+        @extend %arrow-top-white;
+    }
+
+}
+
+// ==========================================================================
+// Dropdown BEM
+// ==========================================================================
+
 .dropdown {
     position: relative;
-    margin-bottom: 20px;
+    max-width: 460px;
+    margin: 20px auto; // Solo para sg
 
-    @include e(toggle) {
+    &-toggle {
         display: block;
+        width: 100%; // Solo para sg
+
 
         .icon {
             margin-left: 10px;
@@ -15,13 +41,12 @@
         }
     }
 
-    @include e(box) {
+    &-box {
         position: absolute;
         z-index: 9999;
         top: 100%;
-        margin-top: 5px;
         min-width: 220px;
-        display: none;
+        // display: none;
         background: $white;
         @include radius(4px, $gray-20);
         @include shadow(0 0 4px 1px rgba(0,0,0,.3));
@@ -31,6 +56,15 @@
 
         @include m(left) {
             left: 0;
+            @extend %dropdown-box-arrow;
+
+            &::before {
+                left: 21px;
+            }
+
+            &::after {
+                left: 20px;
+            }
         }
 
 
@@ -38,12 +72,40 @@
 
         @include m(right) {
             right: 0;
+            @extend %dropdown-box-arrow;
+
+            &::before {
+                right: 21px;
+            }
+
+            &::after {
+                right: 20px;
+            }
         }
+
+
+        // Dropdown Items
+
+        @include e(item) {
+
+            a {
+                padding: rem(11px);
+                display: block;
+
+                &:hover {
+                    background: $gray-7;
+                }
+
+            }
+        }
+
+
+
     }
 
     &:hover {
 
-        > .dropdown__box {
+        > .dropdown-box {
             display: block;
         }
 

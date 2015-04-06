@@ -6,8 +6,6 @@
 // Extend for Nav Tabs
 // ==========================================================================
 
-// General Nav Tabs styles
-
 %nav-tab-item {
     float: left;
     border-left: none;
@@ -23,9 +21,10 @@
 }
 
 %nav-tab-item-active {
+    @extend %arrow;
+
     &::before,
     &::after {
-       content: '';
        left: 50%;
     }
 
