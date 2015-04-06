@@ -60,6 +60,13 @@
 
 .f {
 
+    // Form Package
+
+    &-package {
+        overflow: hidden;
+
+    }
+
     // Form Group
 
     &-group {
@@ -69,7 +76,6 @@
         .f-package & {
             float: left;
             margin-right: 10px;
-            @extend %clearfix;
         }
 
         &__label, &__input {

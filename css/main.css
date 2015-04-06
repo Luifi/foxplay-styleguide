@@ -1,4 +1,4 @@
-.row:after, .hl-row:after, .f-package .f-group:after, .nav:after {
+.row:after, .hl-row:after, .nav:after {
   content: "";
   display: table;
   clear: both; }
@@ -699,6 +699,8 @@ code {
 .f-group__input, .f-search, .f-select__select {
   padding: 0.5625rem 0.625rem; }
 
+.f-package {
+  overflow: hidden; }
 .f-package .f-group {
   float: left;
   margin-right: 10px; }
