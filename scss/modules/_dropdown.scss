@@ -52,6 +52,7 @@
         min-width: 220px;
         display: none;
         background: $white;
+        padding: rem(3px) 0;
         @include radius(4px, $gray-20);
 
 
@@ -90,9 +91,13 @@
         // Dropdown Items
 
         @include e(item) {
+            border-bottom: 1px solid $gray-20;
+
+            &:last-child {
+                border-bottom: 0;
+            }
 
             a {
-                margin: 3px 0;
                 padding: rem(11px);
                 display: block;
 
@@ -102,21 +107,9 @@
             }
 
             @include m(lead) {
-                background: $gray-13;
-            }
 
-
-            // Hover for arrow
-
-            &:first-child:hover   {
-                background: red;
-
-                &::before {
-                    border-color: transparent transparent $gray-7 transparent;
-                }
-
-                &::after {
-                    border-color: transparent transparent $gray-7 transparent;
+                a {
+                    font-weight: $font-weight--bold;
                 }
 
             }
