@@ -90,7 +90,6 @@
         // Dropdown Items
 
         @include e(item) {
-            padding: rem(3px);
 
             a {
                 padding: rem(11px);
@@ -99,11 +98,17 @@
                 &:hover {
                     background: $gray-7;
                 }
+            }
 
+            @include m(lead) {
+                background: $gray-13;
             }
         }
 
     }
+
+
+    //
 
 
     // Show DD

@@ -6,8 +6,7 @@
 	@include box-sizing(border-box);
 }
 
-*:focus,
-*:active {
+*:focus {
     outline: 0;
 }
 
