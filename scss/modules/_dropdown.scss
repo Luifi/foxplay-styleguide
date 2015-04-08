@@ -92,6 +92,7 @@
         @include e(item) {
 
             a {
+                margin: 3px 0;
                 padding: rem(11px);
                 display: block;
 
@@ -103,12 +104,26 @@
             @include m(lead) {
                 background: $gray-13;
             }
+
+
+            // Hover for arrow
+
+            &:first-child:hover   {
+                background: red;
+
+                &::before {
+                    border-color: transparent transparent $gray-7 transparent;
+                }
+
+                &::after {
+                    border-color: transparent transparent $gray-7 transparent;
+                }
+
+            }
+
         }
 
     }
-
-
-    //
 
 
     // Show DD

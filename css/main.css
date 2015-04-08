@@ -880,12 +880,19 @@ code {
       .dropdown-box--right::after {
         right: 20px; }
     .dropdown-box__item a {
+      margin: 3px 0;
       padding: 0.6875rem;
       display: block; }
       .dropdown-box__item a:hover {
         background: #eee; }
     .dropdown-box__item--lead {
       background: #ddd; }
+    .dropdown-box__item:first-child:hover {
+      background: red; }
+      .dropdown-box__item:first-child:hover::before {
+        border-color: transparent transparent #eee transparent; }
+      .dropdown-box__item:first-child:hover::after {
+        border-color: transparent transparent #eee transparent; }
   .dropdown:hover > .dropdown-box {
     display: block; }
 
