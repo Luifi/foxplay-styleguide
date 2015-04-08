@@ -14,6 +14,9 @@
     vertical-align: baseline;
     text-transform: uppercase;
 
+
+    // Label group
+
     &-group {
         margin: 10px 0;
         position: relative;
@@ -24,6 +27,9 @@
         }
 
     }
+
+
+    // Label pilar
 
     @include m(series) {
        background: $orange;
@@ -60,6 +66,9 @@
         }
     }
 
+
+    // Label Exclusive
+
     @include m(exclusive) {
         background: white;
         color: $gray-87;
@@ -67,14 +76,17 @@
         padding: .3rem 0 .3rem .3rem;
     }
 
+
+    // Label live
+
     @include m(live) {
         background: $gray-95;
     }
 
+
     // pg label
 
     &-pg {
-        @include radius(4px, transparent);
 
         @include m(gray) {
             background: $gray-80;
@@ -104,8 +116,6 @@
             background: #1d1815;
         }
     }
-
-
 
 }
 
