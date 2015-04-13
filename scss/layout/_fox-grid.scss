@@ -84,7 +84,7 @@ $gutter--hl  : .3125rem;
 
     // More
 
-    .box-80 {
+    .box-3-4 {
         width: $full-width - 20%;
     }
 
@@ -99,11 +99,11 @@ $gutter--hl  : .3125rem;
 // ==========================================================================
 
 .hl-row {
-    margin-left: $gutter--hl;
-    margin-right: $gutter--hl;
+    margin-left: -$gutter--hl;
+    margin-right: -$gutter--hl;
 
     // Attribute selector
-    [class^='box'] {
+    [class^='hl-box'] {
         float: left;
         padding:$gutter--hl;
         width: $full-width; //
@@ -116,7 +116,7 @@ $gutter--hl  : .3125rem;
 
         // $gutter--highlight for nesting boxes
 
-        & .row-hl {
+        & .hl-row {
             margin-bottom: -$gutter--hl;
             margin-top: $gutter--hl;
         }
@@ -132,7 +132,7 @@ $gutter--hl  : .3125rem;
      */
 
     @for $i from $first through $last {
-        .box-#{$i} {
+        .hl-box-#{$i} {
             width: $full-width / $i;
         }
     }
