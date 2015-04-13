@@ -13,12 +13,12 @@
     white-space: nowrap;
     vertical-align: baseline;
     text-transform: uppercase;
+    margin-bottom: 5px;
 
 
     // Label group
 
     &-group {
-        margin: 10px 0;
         position: relative;
 
         .label--foxmas {
@@ -62,7 +62,7 @@
         padding: 0;
         .logo--foxmas {
             width: 40px;
-            height: 21px;
+            height: 20px;
         }
     }
 

@@ -72,6 +72,19 @@
         padding: rem(20px);
     }
 
+
+
+    p {
+        margin: 10px 0;
+    }
+
+}
+
+
+// Sg Headline
+
+.sg-hl {
+
     .headline {
 
         &-1, &-2, &-3, &-4, &-5, &-6 {
@@ -87,10 +100,6 @@
             margin-top: 0;
         }
 
-    }
-
-    p {
-        margin: 10px 0;
     }
 
 }
