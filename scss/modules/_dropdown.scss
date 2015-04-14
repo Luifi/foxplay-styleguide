@@ -30,7 +30,8 @@
     max-width: 460px;
     margin: 20px auto; // Solo para sg
 
-    // Inline-block
+
+    // Dropdown inline-block
 
     @include m(inline) {
         display: inline-block;
@@ -69,11 +70,11 @@
             @extend %dropdown-box-arrow;
 
             &::before {
-                left: 21px;
+                left: 16px;
             }
 
             &::after {
-                left: 20px;
+                left: 15px;
             }
         }
 
@@ -85,11 +86,11 @@
             @extend %dropdown-box-arrow;
 
             &::before {
-                right: 21px;
+                right: 16px;
             }
 
             &::after {
-                right: 20px;
+                right: 15px;
             }
         }
 

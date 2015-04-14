@@ -26,6 +26,8 @@
         text-align: center;
         width: 52px;
 
+
+
         .icon-box__text {
             @extend %icon-box-text;
 
@@ -45,7 +47,7 @@
     }
 
     @include e(share) {
-
+        margin-right: 0;
     }
 
 }

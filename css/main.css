@@ -869,15 +869,15 @@ code {
     .dropdown-box--left {
       left: 0; }
       .dropdown-box--left::before {
-        left: 21px; }
+        left: 16px; }
       .dropdown-box--left::after {
-        left: 20px; }
+        left: 15px; }
     .dropdown-box--right {
       right: 0; }
       .dropdown-box--right::before {
-        right: 21px; }
+        right: 16px; }
       .dropdown-box--right::after {
-        right: 20px; }
+        right: 15px; }
     .dropdown-box__item {
       border-bottom: 1px solid #ccc; }
       .dropdown-box__item:last-child {
@@ -944,6 +944,8 @@ code {
   width: 52px; }
   .icon-box__view .icon-box__text--white, .icon-box__list .icon-box__text--white, .icon-box__share .icon-box__text--white {
     color: #fff; }
+.icon-box__share {
+  margin-right: 0; }
 
 .styleguide {
   background: #eee; }
