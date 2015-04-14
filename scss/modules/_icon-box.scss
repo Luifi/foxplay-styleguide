@@ -38,16 +38,15 @@
         }
     }
 
-    @include e(view) {
-
-    }
-
-    @include e(list) {
-
-    }
-
     @include e(share) {
         margin-right: 0;
+    }
+
+
+    // Specific styles "dropdown-box" inside "icon-box"
+
+    & .dropdown-box {
+        top: 60px;
     }
 
 }

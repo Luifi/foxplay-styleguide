@@ -256,6 +256,9 @@ p {
 img {
   border: none !important; }
 
+.footer {
+  height: 150px; }
+
 /**
  * Base on Olivia Grid v1.2
  * Copyright 2014, Luis Chiappe
@@ -946,6 +949,8 @@ code {
     color: #fff; }
 .icon-box__share {
   margin-right: 0; }
+.icon-box .dropdown-box {
+  top: 60px; }
 
 .styleguide {
   background: #eee; }
