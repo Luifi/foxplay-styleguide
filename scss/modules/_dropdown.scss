@@ -30,6 +30,12 @@
     max-width: 460px;
     margin: 20px auto; // Solo para sg
 
+    // Inline-block
+
+    @include m(inline) {
+        display: inline-block;
+    }
+
 
     // DD Toggle
 
@@ -38,7 +44,7 @@
         width: 100%; // Solo para sg
 
         .icon {
-            margin-left: 10px;
+            // margin-left: 10px;
         }
     }
 

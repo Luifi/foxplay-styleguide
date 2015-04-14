@@ -58,7 +58,6 @@
     @include radius(4px, transparent);
     padding: rem(30px);
     margin-bottom: 40px;
-    overflow: hidden;
 
 
     &--white {
@@ -72,7 +71,10 @@
         padding: rem(20px);
     }
 
-
+    .headline-2 {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
 
     p {
         margin: 10px 0;
