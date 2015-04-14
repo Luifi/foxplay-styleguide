@@ -859,7 +859,7 @@ code {
     position: absolute;
     z-index: 9999;
     top: 100%;
-    min-width: 220px;
+    min-width: 176px;
     display: none;
     background: #fff;
     padding: 0.1875rem 0;
@@ -950,7 +950,16 @@ code {
 .icon-box__share {
   margin-right: 0; }
 .icon-box .dropdown-box {
-  top: 60px; }
+  top: 60px;
+  width: 176px; }
+
+.link, .link--white {
+  font-size: 0.875rem;
+  display: block;
+  margin: 5px 0; }
+
+.link--white {
+  color: #fff; }
 
 .styleguide {
   background: #eee; }
