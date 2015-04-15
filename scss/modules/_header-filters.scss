@@ -12,7 +12,7 @@
     }
 
     @include e(title) {
-        margin-bottom: 0; // reveer
+        margin-bottom: 0 !important; // Remover este estilo
         float: left;
         font-weight: $font-weight--thin;
     }
