@@ -3,9 +3,7 @@
 // ==========================================================================
 
 .header-filters {
-    overflow: hidden;
-    padding: rem(20px) 0;
-    @extend %clearfix;
+    @extend %header-gral; // Get from header-block
 
     @include e(link) {
         margin-bottom: 30px;

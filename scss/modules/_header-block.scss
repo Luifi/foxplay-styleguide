@@ -2,10 +2,14 @@
 // Header block
 // ==========================================================================
 
-.header-block {
+%header-gral {
     overflow: hidden;
     padding: rem(20px) 0;
     @extend %clearfix;
+}
+
+.header-block {
+    @extend %header-gral;
 
     &__title,
     &__link {

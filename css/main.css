@@ -568,6 +568,10 @@ img {
     width: 20px;
     height: 20px;
     color: #444; }
+  .icon--letter {
+    width: 25px;
+    height: 20px;
+    color: #444; }
   .icon--rotate-left {
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
@@ -987,33 +991,31 @@ code {
 .link--white {
   color: #fff; }
 
-.header-block {
+.header-block, .header-filters {
   overflow: hidden;
   padding: 1.25rem 0; }
-  .header-block__title, .header-block__link {
-    margin: 0; }
-  .header-block__title {
-    text-transform: uppercase;
-    float: left; }
-  .header-block__link {
-    float: right;
-    line-height: 1.25rem; }
 
-.header-filters {
-  overflow: hidden;
-  padding: 1.25rem 0; }
-  .header-filters__link {
-    margin-bottom: 30px; }
-  .header-filters__title {
-    margin-bottom: 0 !important;
-    float: left;
-    font-weight: 100; }
-  .header-filters__label {
-    float: left;
-    display: block;
-    line-height: 2.5rem;
-    margin: 0 20px 0 40px;
-    font-weight: 300; }
+.header-block__title, .header-block__link {
+  margin: 0; }
+.header-block__title {
+  text-transform: uppercase;
+  float: left; }
+.header-block__link {
+  float: right;
+  line-height: 1.25rem; }
+
+.header-filters__link {
+  margin-bottom: 30px; }
+.header-filters__title {
+  margin-bottom: 0 !important;
+  float: left;
+  font-weight: 100; }
+.header-filters__label {
+  float: left;
+  display: block;
+  line-height: 2.5rem;
+  margin: 0 20px 0 40px;
+  font-weight: 300; }
 
 .styleguide {
   background: #eee; }

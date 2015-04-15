@@ -76,6 +76,14 @@
         color: $gray-71;
     }
 
+    // Size letter
+
+    @include m(letter) {
+        width: 25px;
+        height: 20px;
+        color: $gray-71;
+    }
+
     // Rotate
 
     @include m(rotate-left) {
