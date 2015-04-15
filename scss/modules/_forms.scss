@@ -30,7 +30,7 @@
 %f-gral  {
     @include radius(4px, $gray-20);
     position: relative;
-    width: 230px;
+    width: 240px;
     height: 40px;
 }
 
@@ -128,9 +128,7 @@
             border-left: 1px solid $gray-20;
             padding: rem(9.5px) rem(14px);
 
-            svg {
-                margin-right: 0 !important; // remover este estilo, esta aplicado solo para icons del sg
-            }
+
         }
 
         @include e(select) {
@@ -141,6 +139,35 @@
             @extend %f-gral-input;
         }
 
+    }
+
+
+    // Select day
+
+    &-select-day {
+        @extend %f-gral;
+        text-align: center;
+        width: 260px;
+
+        @include e(arrow) {
+
+            padding: rem(9.5px) rem(14px);
+        }
+
+        &__arrow:first-child {
+            float: right;
+            border-left: 1px solid $gray-20;
+        }
+
+        &__arrow:last-child {
+            float: left;
+            border-right: 1px solid $gray-20;
+        }
+
+        @include e(text) {
+            font-weight: $font-weight--light;
+            line-height: rem(38px);
+        }
     }
 
 
