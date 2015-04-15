@@ -1,0 +1,28 @@
+// ==========================================================================
+// Header filters
+// ==========================================================================
+
+.header-filters {
+    overflow: hidden;
+    padding: rem(20px) 0;
+    @extend %clearfix;
+
+    @include e(link) {
+        margin-bottom: 30px;
+    }
+
+    @include e(title) {
+        margin-bottom: 0; // reveer
+        float: left;
+        font-weight: $font-weight--thin;
+    }
+
+    @include e(label) {
+        float: left;
+        display: block;
+        line-height: rem(40px);
+        margin: 0 20px 0 40px;
+        font-weight: $font-weight--light;
+    }
+
+}

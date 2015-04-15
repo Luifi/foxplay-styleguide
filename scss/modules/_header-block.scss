@@ -4,7 +4,8 @@
 
 .header-block {
     overflow: hidden;
-    margin: 20px 0;
+    padding: rem(20px) 0;
+    @extend %clearfix;
 
     &__title,
     &__link {

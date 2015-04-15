@@ -1,4 +1,4 @@
-.row:after, .hl-row:after, .nav:after {
+.row:after, .hl-row:after, .nav:after, .header-block:after, .header-filters:after {
   content: "";
   display: table;
   clear: both; }
@@ -975,7 +975,7 @@ code {
 
 .header-block {
   overflow: hidden;
-  margin: 20px 0; }
+  padding: 1.25rem 0; }
   .header-block__title, .header-block__link {
     margin: 0; }
   .header-block__title {
@@ -984,6 +984,22 @@ code {
   .header-block__link {
     float: right;
     line-height: 1.25rem; }
+
+.header-filters {
+  overflow: hidden;
+  padding: 1.25rem 0; }
+  .header-filters__link {
+    margin-bottom: 30px; }
+  .header-filters__title {
+    margin-bottom: 0;
+    float: left;
+    font-weight: 100; }
+  .header-filters__label {
+    float: left;
+    display: block;
+    line-height: 2.5rem;
+    margin: 0 20px 0 40px;
+    font-weight: 300; }
 
 .styleguide {
   background: #eee; }
