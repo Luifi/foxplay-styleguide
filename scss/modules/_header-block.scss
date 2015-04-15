@@ -1,0 +1,24 @@
+// ==========================================================================
+// Header block
+// ==========================================================================
+
+.header-block {
+    overflow: hidden;
+    margin: 20px 0;
+
+    &__title,
+    &__link {
+        margin: 0; // Ver este estilo, resetea el margen de los textos
+    }
+
+    @include e(title) {
+        text-transform: uppercase;
+        float: left;
+    }
+
+    @include e(link) {
+        float: right;
+        line-height: rem(20px);
+    }
+
+}

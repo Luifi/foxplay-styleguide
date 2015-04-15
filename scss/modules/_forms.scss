@@ -150,7 +150,6 @@
         width: 260px;
 
         @include e(arrow) {
-
             padding: rem(9.5px) rem(14px);
         }
 
@@ -166,7 +165,7 @@
 
         @include e(text) {
             font-weight: $font-weight--light;
-            line-height: rem(38px);
+            line-height: rem(40px);
         }
     }
 

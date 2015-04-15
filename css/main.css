@@ -762,7 +762,7 @@ code {
     border-right: 1px solid #ccc; }
   .f-select-day__text {
     font-weight: 300;
-    line-height: 2.375rem; }
+    line-height: 2.5rem; }
 .f--half-width {
   width: 50%; }
 .f--full-width {
@@ -972,6 +972,18 @@ code {
 
 .link--white {
   color: #fff; }
+
+.header-block {
+  overflow: hidden;
+  margin: 20px 0; }
+  .header-block__title, .header-block__link {
+    margin: 0; }
+  .header-block__title {
+    text-transform: uppercase;
+    float: left; }
+  .header-block__link {
+    float: right;
+    line-height: 1.25rem; }
 
 .styleguide {
   background: #eee; }
