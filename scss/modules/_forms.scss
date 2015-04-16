@@ -30,8 +30,9 @@
 %f-gral  {
     @include radius(4px, $gray-20);
     position: relative;
-    width: 240px;
+    width: 230px;
     height: 40px;
+    font-size: rem(15px);
 }
 
 
@@ -102,10 +103,6 @@
 
         @include e(loupe) {
             float: right;
-
-            svg {
-                margin-right: 0 !important; // remover este estilo, esta aplicado solo para icons del sg
-            }
         }
 
         @include e(input) {
@@ -147,7 +144,7 @@
     &-select-day {
         @extend %f-gral;
         text-align: center;
-        width: 260px;
+        width: 240px;
 
         @include e(arrow) {
             padding: rem(9.5px) rem(14px);
