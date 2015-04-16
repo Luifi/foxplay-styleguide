@@ -15,8 +15,8 @@ $min-width      : 1px;
 $fix-width      : 1600px;
 
 // Media Queries Breakpoints
-$medium-screen  : 980px;
-$large-screen   : 1366px;
+$screen-md : 980px;
+$screen-lg   : 1366px;
 
 // First and last column
 $first          : 1;
@@ -89,7 +89,7 @@ $gutter--hl  : .3125rem;
 
     // Medium screens
 
-    @media screen and (min-width: $medium-screen) {
+    @media screen and (min-width: $screen-md) {
 
         @for $i from $first through $last {
             .box-m-#{$i} {
@@ -116,7 +116,7 @@ $gutter--hl  : .3125rem;
 
     // Large screens
 
-    @media screen and (min-width: $large-screen) {
+    @media screen and (min-width: $screen-lg) {
 
         @for $i from $first through $last {
             .box-l-#{$i} {

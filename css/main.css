@@ -829,7 +829,11 @@ code {
   list-style-type: none; }
 
 .nav-vertical {
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  display: none; }
+  @media (min-width: 981px) {
+    .nav-vertical {
+      display: block; } }
   .nav-vertical__item {
     display: block; }
     .nav-vertical__item a {

@@ -4,6 +4,10 @@
 
 .nav-vertical {
     overflow-y: scroll;
+    display: none;
+    @include mq(medium) {
+        display: block;
+    }
 
     @include e(item) {
         display: block;

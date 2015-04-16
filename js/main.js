@@ -20,11 +20,11 @@ $(document).ready(function(){
     var $nav = $('.nav-vertical');
     var heightH = $('header').height();
 
-    console.log(heightH);
+    var w = $(window).width();
 
     $(document).on("scroll", function() {
 
-        if($(this).scrollTop() >= heightH) {
+        if($(this).scrollTop() >= heightH && w >= 980) {
             $nav.addClass('is-fixed');
             $nav.css('margin-top', -(heightH + 30));
 
