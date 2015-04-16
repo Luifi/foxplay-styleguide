@@ -84,7 +84,11 @@ $gutter--hl  : .3125rem;
 
     // More
 
-    .box-3-4 {
+    .box-90 {
+        width: $full-width - 10%;
+    }
+
+    .box-80 {
         width: $full-width - 20%;
     }
 

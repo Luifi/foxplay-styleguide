@@ -6,11 +6,10 @@
     @extend %header-gral; // Get from header-block
 
     @include e(link) {
-        margin-bottom: 30px;
+        margin-bottom: 36px;
     }
 
     @include e(title) {
-        margin-bottom: 0 !important; // Remover este estilo
         float: left;
         font-weight: $font-weight--thin;
     }
