@@ -11,8 +11,12 @@
 
 // Width containers and columns
 $full-width     : 100%;
-$min-width      : 980px;
+$min-width      : 1px;
 $fix-width      : 1600px;
+
+// Media Queries Breakpoints
+$medium-screen  : 980px;
+$large-screen   : 1366px;
 
 // First and last column
 $first          : 1;
@@ -82,18 +86,44 @@ $gutter--hl  : .3125rem;
         }
     }
 
-    // More
 
-    .box-90 {
-        width: $full-width - 10%;
+    // Medium screens
+
+    @media screen and (min-width: $medium-screen) {
+
+        @for $i from $first through $last {
+            .box-m-#{$i} {
+                width: $full-width / $i;
+            }
+        }
+
+          // More
+
+        .box-m-90 {
+            width: $full-width - 10%;
+        }
+
+        .box-m-80 {
+            width: $full-width - 20%;
+        }
+
+        .box-m-75 {
+            width: $full-width - 25%;
+        }
+
     }
 
-    .box-80 {
-        width: $full-width - 20%;
-    }
 
-    .box-75 {
-        width: $full-width - 25%;
+    // Large screens
+
+    @media screen and (min-width: $large-screen) {
+
+        @for $i from $first through $last {
+            .box-l-#{$i} {
+                width: $full-width / $i;
+            }
+        }
+
     }
 
 }

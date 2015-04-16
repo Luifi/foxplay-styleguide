@@ -39,6 +39,16 @@
   }
 }
 
+
+// Vendor Prefixr
+
+@mixin prefixr($property, $value){
+  -webkit-#{$property}: $value;
+    -moz-#{$property}: $value;
+    -ms-#{$property}: $value;
+    -o-#{$property}: $value;
+}
+
 // Box sizing
 
 @mixin box-sizing($value){
