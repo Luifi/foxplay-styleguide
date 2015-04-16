@@ -7,10 +7,10 @@
 // ==========================================================================
 
 %nav-tab-item {
-    float: left;
     border-left: 0;
     position: relative;
     display: inline-block;
+    margin-left: -4px; // Fix Space Between Inline Block Elements
     width: 25%; // Reveer este estilo, 25% es solo si son 4 items.
 }
 

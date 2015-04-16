@@ -27,7 +27,7 @@
 
 .dropdown {
     position: relative;
-    max-width: 460px;
+    max-width: 170px; // solo para sg
     margin: 20px auto; // Solo para sg
 
 
@@ -42,11 +42,6 @@
 
     &-toggle {
         display: block;
-        width: 100%; // Solo para sg
-
-        .icon {
-            // margin-left: 10px;
-        }
     }
 
 
@@ -59,7 +54,7 @@
         min-width: 176px;
         display: none;
         background: $white;
-        padding: rem(3px) 0;
+        padding: rem(8px) 0;
         @include radius(4px, $gray-20);
 
 
@@ -98,11 +93,6 @@
         // Dropdown Items
 
         @include e(item) {
-            border-bottom: 1px solid $gray-20;
-
-            &:last-child {
-                border-bottom: 0;
-            }
 
             a {
                 padding: rem(11px);

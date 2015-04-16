@@ -3,6 +3,7 @@
 // ==========================================================================
 
 .nav-vertical {
+    overflow-y: scroll;
 
     @include e(item) {
         display: block;

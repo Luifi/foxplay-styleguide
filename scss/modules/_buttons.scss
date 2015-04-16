@@ -41,21 +41,21 @@
     // Style Border
 
     @include m(border-dark) {
-        @include radius(100px, $gray-80);
+        @include radius(4px, $gray-80);
         color: $gray-80;
 
         &:hover {
-            @include radius(100px, darken($gray-80, 100%));
+            @include radius(4px, darken($gray-80, 100%));
             color: darken($gray-80, 100%);
         }
     }
 
     @include m(border-white) {
-        @include radius(100px, $white);
+        @include radius(4px, $white);
         color: $white;
 
         &:hover {
-            @include radius(100px, darken($white, 5%));
+            @include radius(4px, darken($white, 5%));
             color: darken($white, 5%);
         }
     }
@@ -64,7 +64,7 @@
     // Style Fill
 
     @include m(fill-dark) {
-        @include radius(100px, transparent);
+        @include radius(4px, transparent);
         color: $white;
         background: $gray-80;
 
@@ -74,7 +74,7 @@
     }
 
     @include m(fill-white) {
-        @include radius(100px, transparent);
+        @include radius(4px, transparent);
         color: $gray-71;
         background: $white;
 
