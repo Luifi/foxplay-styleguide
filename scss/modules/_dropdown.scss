@@ -105,8 +105,12 @@
 
             @include m(lead) {
 
-                a {
-                    font-weight: $font-weight--bold;
+                &:first-child {
+                    border-bottom: 1px solid $gray-20;
+                }
+
+                &:last-child {
+                    border-top: 1px solid $gray-20;
                 }
 
             }

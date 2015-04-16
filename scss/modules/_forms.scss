@@ -113,6 +113,18 @@
     }
 
 
+    // Select and Select day
+
+    &-select,
+    &-select-day {
+
+        @include e(arrow) {
+            padding: rem(10px) rem(14px);
+        }
+
+    }
+
+
     // Select
 
     &-select {
@@ -123,7 +135,6 @@
             top: 0;
             right: 0;
             border-left: 1px solid $gray-20;
-            padding: rem(9.5px) rem(14px);
 
 
         }
@@ -145,10 +156,6 @@
         @extend %f-gral;
         text-align: center;
         width: 240px;
-
-        @include e(arrow) {
-            padding: rem(9.5px) rem(14px);
-        }
 
         &__arrow:first-child {
             float: right;
