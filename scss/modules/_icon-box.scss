@@ -24,7 +24,6 @@
         margin-right: 14px;
         font-size: rem(12px);
         text-align: center;
-        width: 52px;
 
 
 
@@ -34,6 +33,10 @@
             @include m(white) {
                 @extend %icon-box-text;
                 color: $white;
+            }
+
+            @include m(black) {
+                @extend %icon-box-text;
             }
         }
     }

@@ -251,7 +251,8 @@ p {
   font-weight: 400;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  margin-top: 0; }
+  margin-top: 0;
+  margin-bottom: 0; }
 
 img {
   border: 0; }
@@ -410,6 +411,56 @@ img {
     width: 9.09091%; }
   .hl-row .hl-box-12 {
     width: 8.33333%; }
+  @media screen and (min-width: 980px) {
+    .hl-row .hl-box-m-1 {
+      width: 100%; }
+    .hl-row .hl-box-m-2 {
+      width: 50%; }
+    .hl-row .hl-box-m-3 {
+      width: 33.33333%; }
+    .hl-row .hl-box-m-4 {
+      width: 25%; }
+    .hl-row .hl-box-m-5 {
+      width: 20%; }
+    .hl-row .hl-box-m-6 {
+      width: 16.66667%; }
+    .hl-row .hl-box-m-7 {
+      width: 14.28571%; }
+    .hl-row .hl-box-m-8 {
+      width: 12.5%; }
+    .hl-row .hl-box-m-9 {
+      width: 11.11111%; }
+    .hl-row .hl-box-m-10 {
+      width: 10%; }
+    .hl-row .hl-box-m-11 {
+      width: 9.09091%; }
+    .hl-row .hl-box-m-12 {
+      width: 8.33333%; } }
+  @media screen and (min-width: 1366px) {
+    .hl-row .hl-box-l-1 {
+      width: 100%; }
+    .hl-row .hl-box-l-2 {
+      width: 50%; }
+    .hl-row .hl-box-l-3 {
+      width: 33.33333%; }
+    .hl-row .hl-box-l-4 {
+      width: 25%; }
+    .hl-row .hl-box-l-5 {
+      width: 20%; }
+    .hl-row .hl-box-l-6 {
+      width: 16.66667%; }
+    .hl-row .hl-box-l-7 {
+      width: 14.28571%; }
+    .hl-row .hl-box-l-8 {
+      width: 12.5%; }
+    .hl-row .hl-box-l-9 {
+      width: 11.11111%; }
+    .hl-row .hl-box-l-10 {
+      width: 10%; }
+    .hl-row .hl-box-l-11 {
+      width: 9.09091%; }
+    .hl-row .hl-box-l-12 {
+      width: 8.33333%; } }
 
 .logo {
   display: block; }
@@ -523,8 +574,7 @@ img {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  text-transform: uppercase;
-  margin-bottom: 5px; }
+  text-transform: uppercase; }
   .label-group {
     position: relative; }
     .label-group .label--foxmas {
@@ -823,6 +873,42 @@ code {
 .f--full-width {
   width: 100%; }
 
+.tooltip {
+  width: 250px;
+  padding: 1.125rem;
+  box-shadow: 1px 2px 10px -3px rgba(0, 0, 0, 0.64);
+  -webkit-box-shadow: 1px 2px 10px -3px rgba(0, 0, 0, 0.64);
+  -moz-box-shadow: 1px 2px 10px -3px rgba(0, 0, 0, 0.64);
+  -ms-box-shadow: 1px 2px 10px -3px rgba(0, 0, 0, 0.64);
+  -o-box-shadow: 1px 2px 10px -3px rgba(0, 0, 0, 0.64);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border: 1px solid transparent; }
+  .tooltip__channel {
+    height: 20px; }
+  .tooltip__title {
+    margin-bottom: 10px;
+    font-size: 1.5625rem; }
+    .tooltip__title--original, .tooltip__title--traduction {
+      font-weight: 300; }
+    .tooltip__title--original {
+      margin-top: 10px;
+      margin-bottom: 2px;
+      font-size: 80%; }
+    .tooltip__title--traduction {
+      color: #777;
+      margin-top: 0;
+      margin-bottom: 5px;
+      font-size: 55%; }
+  .tooltip__year, .tooltip__description {
+    font-size: 0.75rem; }
+  .tooltip__description {
+    margin-top: 10px;
+    margin-bottom: 18px; }
+
 .nav {
   margin: 0;
   padding: 0;
@@ -1019,7 +1105,7 @@ code {
     height: 100%;
     border: 0; }
 
-.icon-box__view .icon-box__text, .icon-box__list .icon-box__text, .icon-box__share .icon-box__text, .icon-box__view .icon-box__text--white, .icon-box__list .icon-box__text--white, .icon-box__share .icon-box__text--white {
+.icon-box__view .icon-box__text, .icon-box__list .icon-box__text, .icon-box__share .icon-box__text, .icon-box__view .icon-box__text--white, .icon-box__list .icon-box__text--white, .icon-box__share .icon-box__text--white, .icon-box__view .icon-box__text--black, .icon-box__list .icon-box__text--black, .icon-box__share .icon-box__text--black {
   display: block;
   margin-top: 5px; }
 
@@ -1027,8 +1113,7 @@ code {
   display: inline-block;
   margin-right: 14px;
   font-size: 0.75rem;
-  text-align: center;
-  width: 52px; }
+  text-align: center; }
   .icon-box__view .icon-box__text--white, .icon-box__list .icon-box__text--white, .icon-box__share .icon-box__text--white {
     color: #fff; }
 .icon-box__share {
@@ -1107,8 +1192,6 @@ code {
   .sg-block .headline-2 {
     margin-top: 0;
     margin-bottom: 0; }
-  .sg-block p {
-    margin: 10px 0; }
 
 .sg-hl .headline-1, .sg-hl .headline-2, .sg-hl .headline-3, .sg-hl .headline-4, .sg-hl .headline-5, .sg-hl .headline-6 {
   margin: 20px 0; }

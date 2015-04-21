@@ -174,7 +174,7 @@ $gutter--hl  : .3125rem;
 
     // Medium screens
 
-    @media screen and (min-width: $medium-screen) {
+    @media screen and (min-width: $screen-md) {
 
         @for $i from $first through $last {
             .hl-box-m-#{$i} {
@@ -187,7 +187,7 @@ $gutter--hl  : .3125rem;
 
     // Large screens
 
-    @media screen and (min-width: $large-screen) {
+    @media screen and (min-width: $screen-lg) {
 
         @for $i from $first through $last {
             .hl-box-l-#{$i} {
