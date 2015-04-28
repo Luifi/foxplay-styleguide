@@ -1,13 +1,18 @@
 // Load plugins
+
 var gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
     minifycss = require('gulp-minify-css'),
     uglify = require('gulp-uglify'),
     notify = require('gulp-notify'),
+    scsslint = require('gulp-scss-lint'),
     cache = require('gulp-cache'),
     imagemin = require('gulp-imagemin');
 
+
+
 // Compile Our Sass
+
 gulp.task('styles', function() {
 
     return gulp.src('scss/main.scss')
@@ -21,7 +26,10 @@ gulp.task('styles', function() {
 
 });
 
+
+
 // JS Minify
+
 gulp.task('scripts', function() {
     gulp.src('js/*.js')
     .pipe(gulp.dest('js')) // Dev normal JS
@@ -32,7 +40,10 @@ gulp.task('scripts', function() {
     .pipe(notify({ message: 'JS task complete' }));
 });
 
+
+
 // Images
+
 gulp.task('images', function() {
   return gulp.src('src/img/**/*')
     .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
@@ -40,12 +51,28 @@ gulp.task('images', function() {
     .pipe(notify({ message: 'Images task complete' }));
 });
 
+
+// SCSS Lint
+
+gulp.task('scss-lint', function() {
+  gulp.src('/scss/**/*.scss')
+    .pipe(scsslint())
+    .pipe(scsslint.failReporter('E'))
+});
+
+
+
 // Watch Files For Changes
+
 gulp.task('watch', function() {
     gulp.watch('scss/**/*.scss', ['styles']);
     gulp.watch('js/*.js', ['scripts']);
     gulp.watch('img/**/*', ['images']);
+    gulp.watch('scss/**/*.scss', ['scss-lint']);
 });
 
+
+
 // Default Task
-gulp.task('default', ['styles', 'scripts', 'images', 'watch']);
+
+gulp.task('default', ['styles', 'scripts', 'images', 'scss-lint', 'watch']);
