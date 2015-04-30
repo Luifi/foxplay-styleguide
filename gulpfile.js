@@ -55,7 +55,7 @@ gulp.task('images', function() {
 // SCSS Lint
 
 gulp.task('scss-lint', function() {
-  gulp.src('/scss/**/*.scss')
+  gulp.src('scss/**/*.scss')
     .pipe(scsslint())
     .pipe(scsslint.failReporter('E'))
 });
